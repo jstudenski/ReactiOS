@@ -48,10 +48,9 @@ class Segmentcontrol extends React.Component {
     <div style={customStyle} onChange={this.setGender}>
       <div className="container">
         <div className="segmented">
-          <label><input type="radio" name="segmented" value="option 1"/> Option 1</label>
-          <label><input type="radio" name="segmented" value="option 2"/> Option 2</label>
-          <label><input type="radio" name="segmented" value="option 3"/> Option 3</label>
-          <label><input type="radio" name="segmented" value="option 4"/> Option 4</label>
+          {this.props.values.map((option) =>
+            <label><input type="radio" name="segmented" value={option}/>{option}</label>
+          )}
         </div>
       </div>
     </div>
@@ -66,6 +65,8 @@ Segmentcontrol.propTypes = {
 
 Segmentcontrol.defaultProps = {
   color: 'salmon',
+  values: ['Option One', 'Option Two', 'Option Three'],
+  selectedIndex: 0,
 };
 
 export default Segmentcontrol
