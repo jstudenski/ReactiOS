@@ -6,9 +6,12 @@ class Segmentcontrol extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      counter: 0
+      counter: 0,
+      checkedIndex: 0,
+      selectedValue: 'Option 2'
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleClick() {
@@ -31,9 +34,20 @@ class Segmentcontrol extends React.Component {
   //     });
   // });
   setGender(event) {
-     console.log(event.target);
-     event.target.className = "checked";
+     //console.log(event.target);
+   // event.target.className = "active";
+   // event.target.className = "checked";
     //  className="checked"
+  }
+
+  handleChange(event){
+
+    // console.log("newnew");
+  //   console.log(event.target.value);
+    // event.target.checked = 'checked';
+    this.setState({
+      selectedValue: event.target.value
+    });
   }
 
   render() {
@@ -49,10 +63,33 @@ class Segmentcontrol extends React.Component {
       <div className="container">
         <div className="segmented">
           {this.props.values.map((option) =>
-            <label><input type="radio" name="segmented" value={option}/>{option}</label>
+            <label>
+              <input
+                className="hello"
+                type="radio"
+                name="segmented"
+                value={option}
+                onChange={this.handleChange}
+              />
+                {option}
+              </label>
           )}
         </div>
+
+
+      <div class="title">Radio Input Controls</div>
+      <div class="segment_control_container" value={this.state.selectedValue}>
+        <input checked={this.state.selectedValue == "Option 1" ? "checked" : null } type="radio" id="option_1" name="option_control" value="Option 1"  onChange={this.handleChange}/>
+        <label class="segment_control" for="option_1">Option 1</label>
+        <input checked={this.state.selectedValue == "Option 2" ? "checked" : null } type="radio" id="option_2" name="option_control" value="Option 2"  onChange={this.handleChange} />
+        <label class="segment_control" for="option_2">Option 2</label>
+        <input checked={this.state.selectedValue == "Option 3" ? "checked" : null } type="radio" id="option_3" name="option_control" value="Option 3"  onChange={this.handleChange} />
+        <label class="segment_control" for="option_3">Option 3</label>
       </div>
+      </div>
+
+
+
     </div>
     )
   }

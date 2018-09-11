@@ -54,5 +54,66 @@
 }
 
 .hello {
-  background-color: red;
+  background:#167efb;
+  color: red;
 }
+
+body {
+  background-color: bisque;
+}
+
+
+
+/* $mainColour: #007aff;
+$lightColour: tint($mainColour, 90%); */
+
+.segment_control_container {
+  display: flex;
+}
+.segment_control {
+  box-sizing: border-box;
+  color: #007aff;
+  cursor: pointer;
+  font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "Arial", sans-serif;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid #007aff;
+  user-select: none;
+}
+.segment_control:hover {
+  background-color: salmon;
+}
+.segment_control:not(:first-of-type) {
+  margin-left: -1px;
+}
+.segment_control:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+.segment_control:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+.segment_control.active,
+.segment_control_container input[type="radio"]:checked + label {
+  background-color: #007aff;
+  color: #fff;
+}
+.segment_control_container input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* FOR DEMO */
+
+body {
+  padding: 40px;
+  font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "Arial", sans-serif;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.segment_control_container {
+  margin-bottom: 50px;
+}
+
+
