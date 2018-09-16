@@ -15,10 +15,10 @@ class Segmentcontrol extends React.Component {
   }
 
   handleChange(event){
-  //  console.log(this.state);
     this.setState({
       selectedValue: event.target.value
     });
+    console.log(this.state);
   }
 
   render() {
@@ -31,20 +31,31 @@ class Segmentcontrol extends React.Component {
     return (
       <div style={customStyle}>
         <div className="container">
-        <div className="title">Radio Input Controls</div>
-          <div className="segment_control_container" value={this.state.selectedValue} onChange={this.handleChange}>
-            <input type="radio" id="option_1" name="option_control" value="Option 1"/>
-            <label className="segment_control" htmlFor="option_1">Option 1</label>
-            <input type="radio" id="option_2" name="option_control" value="Option 2"/>
-            <label className="segment_control" htmlFor="option_2">Option 2</label>
-            <input type="radio" id="option_3" name="option_control" value="Option 3"/>
-            <label className="segment_control" htmlFor="option_3">Option 3</label>
+
+          <div className="segment_control_container" onChange={this.handleChange}>
+
+
+
+<input type="radio" id="option_1" name="option_control" value="Option 1"/>
+<label className="segment_control" htmlFor="option_1">Option 1</label>
+<input type="radio" id="option_2" name="option_control" value="Option 2"/>
+<label className="segment_control" htmlFor="option_2">Option 2</label>
+<input type="radio" id="option_3" name="option_control" value="Option 3"/>
+<label className="segment_control" htmlFor="option_3">Option 3</label>
+
+
           </div>
         </div>
       </div>
     )
   }
 }
+
+// {this.props.values.map(val =>
+//   <input type="radio" id="option_1" name="option_control" value="Option 1" />,
+//   <label className="segment_control" htmlFor="option_1">{val}</label>
+// )}
+
 
 //<h1 onClick={this.handleClick}>Hello Segmentcontrol: {this.state.counter}</h1>
 Segmentcontrol.propTypes = {
