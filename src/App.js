@@ -22,14 +22,15 @@ class App extends Component {
         this.setState({
           footerBackground: 'rgb(242, 243, 244)',
           iconColor: 'rgb(199, 200, 201)',
-          browser: 'Chrome',
+          browser: navigator.userAgent,
         });
       } else if(navigator.userAgent.indexOf("Safari") != -1) {
         this.setState({
           footerBackground: 'rgb(239, 240, 241)',
-          iconColor: 'rgb(213, 214, 215))',
-          browser: 'Safari',
+          iconColor: 'rgb(213, 214, 215)',
+          browser: navigator.userAgent,
         });
+
       } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
       console.log('Firefox');
       }
