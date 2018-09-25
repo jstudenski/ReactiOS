@@ -11,40 +11,40 @@ import Envelope from './components/icons/Envelope.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { browser: 'pink' };
-    this.getBrowser = this.getBrowser.bind(this);
+    this.state = {
+      iconColor: 'rgb(199, 200, 201)',
+      footerBackground: 'rgb(239, 240, 241)',
+    };
+
   }
   componentDidMount() {
 
-    if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
-      console.log('Opera');
-      } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-        this.setState({
-          footerBackground: 'rgb(242, 243, 244)',
-          iconColor: 'rgb(199, 200, 201)',
-          browser: navigator.userAgent,
-        });
-      } else if(navigator.userAgent.indexOf("Safari") != -1) {
-        this.setState({
-          footerBackground: 'rgb(239, 240, 241)',
-          iconColor: 'rgb(213, 214, 215)',
-          browser: navigator.userAgent,
-        });
+    // if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
+    //   console.log('Opera');
+    //   } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+    //     this.setState({
+    //       footerBackground: 'rgb(242, 243, 244)',
+    //       iconColor: 'rgb(199, 200, 201)',
+    //       browser: navigator.userAgent,
+    //     });
+    //   } else if(navigator.userAgent.indexOf("Safari") != -1) {
+    //     this.setState({
+    //       footerBackground: 'rgb(239, 240, 241)',
+    //       iconColor: 'rgb(213, 214, 215)',
+    //       browser: navigator.userAgent,
+    //     });
 
-      } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
-      console.log('Firefox');
-      }
-      else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {//IF IE > 10 
-      console.log('IE');
-      } else {
-      console.log('unknown');
-      }
-
-  }
-  getBrowser = () => {
-
+    //   } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+    //   console.log('Firefox');
+    //   }
+    //   else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {//IF IE > 10 
+    //   console.log('IE');
+    //   } else {
+    //   console.log('unknown');
+    //   }
 
   }
+
 
   // getBrowser();
 
