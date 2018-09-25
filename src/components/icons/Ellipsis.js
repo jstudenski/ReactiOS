@@ -1,20 +1,7 @@
 import React from 'react';
 
 const Ellipsis = ({name}) => (
-  <svg
-    aria-hidden="true"
-    data-prefix="fal"
-    data-icon="ellipsis-v"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 512 512"
-    class="svg-inline--fa fa-ellipsis-v fa-w-2 fa-2x"
-  >
-    <path
-      fill="currentColor"
-      d="M32 224c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM0 136c0 17.7 14.3 32 32 32s32-14.3 32-32-14.3-32-32-32-32 14.3-32 32zm0 240c0 17.7 14.3 32 32 32s32-14.3 32-32-14.3-32-32-32-32 14.3-32 32z" class="">
-    </path>
-  </svg>
+  <svg aria-hidden="true" data-prefix="far" data-icon="ellipsis-h" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-ellipsis-h fa-w-16 fa-2x"><path fill="currentColor" d="M304 256c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48zm120-48c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-336 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z" class=""></path></svg>
 );
 
 export default Ellipsis;

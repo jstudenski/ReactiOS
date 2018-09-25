@@ -3,6 +3,9 @@ import './App.css';
 import SegmentControl from './components/SegmentControl';
 import Home from './components/icons/Home.js';
 import Ellipsis from './components/icons/Ellipsis.js';
+import Calendar from './components/icons/Calendar.js';
+import Comment from './components/icons/Comment.js';
+import Envelope from './components/icons/Envelope.js';
 
 class App extends Component {
   render() {
@@ -41,7 +44,9 @@ class App extends Component {
           <br />
 
           <div className="footer">
-            <Home /><Ellipsis /><Ellipsis /><Ellipsis />
+            <div className="footer-icons">
+            <Home /><Ellipsis /><Calendar /><Comment /><Envelope />
+            </div>
           </div>
         </div>
       </div>
