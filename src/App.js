@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SegmentControl from './components/SegmentControl';
 
@@ -8,7 +7,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">iOS IU Kit</h1>
         </header>
         <SegmentControl
@@ -16,6 +14,7 @@ class App extends Component {
           values={['One', 'Two']}
           selectedIndex={1}
         />
+        <div className="footer">test</div>
       </div>
     );
   }

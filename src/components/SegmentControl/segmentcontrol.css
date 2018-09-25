@@ -58,12 +58,6 @@
   color: red;
 }
 
-body {
-  background-color: bisque;
-}
-
-
-
 /* $mainColour: #007aff;
 $lightColour: tint($mainColour, 90%); */
 
@@ -105,7 +99,6 @@ $lightColour: tint($mainColour, 90%); */
 /* FOR DEMO */
 
 body {
-  padding: 40px;
   font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "Arial", sans-serif;
 }
 .title {
@@ -115,5 +108,3 @@ body {
 .segment_control_container {
   margin-bottom: 50px;
 }
-
-
