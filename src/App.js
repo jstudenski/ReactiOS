@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SegmentControl from './components/SegmentControl';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink, IndexLink } from "react-router-dom";
 import HomeIcon from './components/icons/Home.js';
 import EllipsisIcon from './components/icons/Ellipsis.js';
 import CalendarIcon from './components/icons/Calendar.js';
@@ -50,7 +50,6 @@ class App extends Component {
             values={['One', 'Two']}
             selectedIndex={1}
           />
-
           {pages.map(page => (
             <Route exact path={page.route} component={page.component} ></Route>
           ))}
@@ -81,8 +80,16 @@ class App extends Component {
           <div className="footer" style={{backgroundColor: this.state.footerBackground}}>
             <div className="footer-icons" style={{color: this.state.iconColor}}>
 
-        {pages.map(page => (
-          <Link to={page.route}><div>{page.icon}</div></Link>
+        {pages.map((page, index) => (
+          <NavLink
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'rgb(49,123,246)'
+            }}
+            style={{color: 'rgb(199, 200, 201)'}}
+            exact={index === 0 ? true : false}
+            to={page.route}><div>{page.icon}</div>
+          </NavLink>
         ))
         }
 
