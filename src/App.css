@@ -20,8 +20,18 @@
 
 .footer {
   width: 100%;
-  font-size: 8px;
+  font-size: 30px;
   background-color: pink;
   position: absolute;
   bottom: 0;
 }
+
+.container {
+  width: 100%;
+  max-width: 300PX;
+}
+
+/* .container{
+  padding:20px;
+  margin:20px 0;
+} */
