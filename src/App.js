@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import SegmentControl from './components/SegmentControl';
-import { BrowserRouter as Router, Route, NavLink, IndexLink } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import HomeIcon from './components/icons/Home.js';
 import EllipsisIcon from './components/icons/Ellipsis.js';
 import CalendarIcon from './components/icons/Calendar.js';
@@ -37,11 +37,6 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="container">
-            {/* <SegmentControl
-              color='rebeccapurple'
-              values={['One', 'Two']}
-              selectedIndex={1}
-            /> */}
             {pages.map(page => (
               <Route exact path={page.route} component={page.component} ></Route>
             ))}
