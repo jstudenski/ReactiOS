@@ -11,7 +11,7 @@ import Envelope from './components/icons/Envelope.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { footerBackground: 'pink' };
+    this.state = { browser: 'pink' };
     this.getBrowser = this.getBrowser.bind(this);
   }
   componentDidMount() {
@@ -22,11 +22,13 @@ class App extends Component {
         this.setState({
           footerBackground: 'rgb(242, 243, 244)',
           iconColor: 'rgb(199, 200, 201)',
+          browser: 'Chrome',
         });
       } else if(navigator.userAgent.indexOf("Safari") != -1) {
         this.setState({
           footerBackground: 'rgb(239, 240, 241)',
           iconColor: 'rgb(213, 214, 215))',
+          browser: 'Safari',
         });
       } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
       console.log('Firefox');
@@ -58,7 +60,7 @@ class App extends Component {
             values={['One', 'Two']}
             selectedIndex={1}
           /><br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {this.state.browser} <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <br />
