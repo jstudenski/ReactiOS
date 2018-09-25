@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import SegmentControl from './components/SegmentControl';
-import Home from './components/icons/Home.js';
-import Ellipsis from './components/icons/Ellipsis.js';
-import Calendar from './components/icons/Calendar.js';
-import Comment from './components/icons/Comment.js';
-import Envelope from './components/icons/Envelope.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HomeIcon from './components/icons/Home.js';
+import EllipsisIcon from './components/icons/Ellipsis.js';
+import CalendarIcon from './components/icons/Calendar.js';
+import CommentIcon from './components/icons/Comment.js';
+import EnvelopeIcon from './components/icons/Envelope.js';
+
+import Home from './pages/Home/Home';
+import Ellipsis from './pages/Ellipsis/Ellipsis';
+import Calendar from './pages/Calendar/Calendar';
+import CommentPage from './pages/Comment/Comment';
+import Envelope from './pages/Envelope/Envelope';
+
+
+const pages = [
+  {route: '/', description:'Home', component:Home, icon:<HomeIcon />},
+  {route: '/Ellipsis', description:'Ellipsis', component:Ellipsis, icon:<EllipsisIcon />},
+  {route: '/Calendar', description:'Calendar', component:Calendar, icon:<CalendarIcon />},
+  {route: '/Comment', description:'Comment', component:CommentPage, icon:<CommentIcon />},
+  {route: '/Envelope', description:'Envelope', component:Envelope, icon:<EnvelopeIcon />},
+]
 
 
 class App extends Component {
@@ -15,43 +31,16 @@ class App extends Component {
       iconColor: 'rgb(199, 200, 201)',
       footerBackground: 'rgb(239, 240, 241)',
     };
-
-  }
-  componentDidMount() {
-
-    // if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
-    //   console.log('Opera');
-    //   } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-    //     this.setState({
-    //       footerBackground: 'rgb(242, 243, 244)',
-    //       iconColor: 'rgb(199, 200, 201)',
-    //       browser: navigator.userAgent,
-    //     });
-    //   } else if(navigator.userAgent.indexOf("Safari") != -1) {
-    //     this.setState({
-    //       footerBackground: 'rgb(239, 240, 241)',
-    //       iconColor: 'rgb(213, 214, 215)',
-    //       browser: navigator.userAgent,
-    //     });
-
-    //   } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
-    //   console.log('Firefox');
-    //   }
-    //   else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {//IF IE > 10 
-    //   console.log('IE');
-    //   } else {
-    //   console.log('unknown');
-    //   }
-
   }
 
-
-  // getBrowser();
 
   render() {
 
     return (
+      <Router>
       <div className="App">
+
+
         <div className="container">
           <header className="App-header">
             <h1 className="App-title">iOS IU Kit</h1>
@@ -60,8 +49,13 @@ class App extends Component {
             color='rebeccapurple'
             values={['One', 'Two']}
             selectedIndex={1}
-          /><br />
-          {this.state.browser} <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          />
+
+          {pages.map(page => (
+            <Route exact path={page.route} component={page.component} ></Route>
+          ))}
+
+        <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <br />
@@ -86,11 +80,20 @@ class App extends Component {
 
           <div className="footer" style={{backgroundColor: this.state.footerBackground}}>
             <div className="footer-icons" style={{color: this.state.iconColor}}>
-            <Home /><Ellipsis /><Calendar /><Comment /><Envelope />
+
+        {pages.map(page => (
+          <Link to={page.route}><div>{page.icon}</div></Link>
+        ))
+        }
+
+
+
             </div>
           </div>
         </div>
+
       </div>
+      </Router>
     );
   }
 }
