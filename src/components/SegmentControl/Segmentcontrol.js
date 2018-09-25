@@ -43,7 +43,6 @@ class Segmentcontrol extends React.Component {
 <input type="radio" id="option_3" name="option_control" value="Option 3"/>
 <label className="segment_control" htmlFor="option_3">Option 3</label>
 
-
           </div>
         </div>
       </div>
