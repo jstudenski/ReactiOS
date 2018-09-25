@@ -2,7 +2,7 @@ import React from 'react';
 
 const Envelope = () => (
   <div>
-    <h2>Envelope</h2>
+    <h2 className='page-heading'>Envelope</h2>
   </div>
 );
 

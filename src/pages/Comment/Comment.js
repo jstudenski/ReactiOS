@@ -2,7 +2,7 @@ import React from 'react';
 
 const Comment = () => (
   <div>
-    <h2>Comment</h2>
+    <h2 className='page-heading'>Comment</h2>
   </div>
 );
 

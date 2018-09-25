@@ -2,24 +2,12 @@ body {
   background-color: #f9f9f9;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-header {
-  padding-top: 1px;
-  background-color: #222;
-  height: 60px;
-  color: white;
-  box-sizing: border-box;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.page-heading {
+  padding: 20px 0 10px 0;
+  margin: 0px;
+  color: #111;
+  font-size: 35px;
+  border-bottom:1px solid rgba(171, 172, 173, 0.5);
 }
 
 .footer {
@@ -41,12 +29,8 @@ body {
 
 .container {
   width: 375px;
+  padding: 0px 20px;
 }
-
-/* .container{
-  padding:20px;
-  margin:20px 0;
-} */
 
 .footer-icons {
   display: flex;
