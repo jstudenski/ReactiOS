@@ -52,14 +52,16 @@ body {
   display: flex;
   max-width: 375px;
   margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .footer svg {
 
   height: 30px;
-  margin: 0 10px 10px 0;
+  width: 30px;
   display: inline-block;
-  flex:1 1 auto;
+  /* flex: 1 1 auto; */
   /* height: 30px;
   width: 30px;
   margin: 0;
