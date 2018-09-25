@@ -21,14 +21,17 @@
 .footer {
   width: 100%;
   font-size: 30px;
-  background-color: pink;
-  position: absolute;
+  background-color: #e4e4e4;
+  border-top: #9E9E9E;
+  position: fixed;
   bottom: 0;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  box-sizing: border-box;
 }
 
 .container {
   width: 100%;
-  max-width: 300PX;
 }
 
 /* .container{
