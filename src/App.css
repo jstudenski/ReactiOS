@@ -100,6 +100,7 @@ ul {
 }
 
 .search-bar {
+  caret-color: rgb(49,123,246);
   width: 335px;
   height: 36px;
   border-radius: 8px;
@@ -107,7 +108,7 @@ ul {
   font-size: 18px;
   box-sizing: border-box;
   padding-left: 15px;
-  transition: .2s;
+  transition: .25s;
 }
 
 textarea, input { outline: none; }
