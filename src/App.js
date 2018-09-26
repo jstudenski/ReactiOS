@@ -51,7 +51,7 @@ class App extends Component {
                   }}
                   style={{color: 'rgb(199, 200, 201)'}}
                   exact={index === 0 ? true : false}
-                  to={page.route}><div>{page.icon}</div>
+                  to={page.route}><div>{page.icon}<p>{page.description}</p></div>
                 </NavLink>
               ))}
             </div>

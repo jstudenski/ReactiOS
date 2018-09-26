@@ -26,7 +26,7 @@ body {
   /* rgba(239,239,244,.9); */
   background-color: rgb(239, 240, 241);
   /* -webkit-backdrop-filter: blur(3px); */
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   font-size: 30px;
   border-top:  rgba(171, 172, 173, 0.5);
@@ -47,9 +47,17 @@ body {
 
 .footer-icons svg {
   padding-top: 10px;
-  padding-bottom: 10px;
-  height: 50px;
+  /* padding-bottom: 10px; */
+  height: 40px;
   width: 50px;
   display: inline-block;
   box-sizing: border-box;
+}
+.footer-icons p {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
 }
