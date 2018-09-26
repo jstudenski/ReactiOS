@@ -90,6 +90,7 @@ ul {
   margin: 0 -20px;
   padding: 0 20px 10px 20px;
   border-bottom: 1px solid rgba(171, 172, 173, 0.5);
+  /* transition: max-height 0.15s ease-out; */
 }
 
 .two h2 {
@@ -106,12 +107,12 @@ ul {
   font-size: 18px;
   box-sizing: border-box;
   padding-left: 15px;
+  transition: .2s;
 }
 
 textarea, input { outline: none; }
 
 .search-bar:focus {
   width: 278px;
-  transition: .2s;
   transform: translate(0, -50px);
 }

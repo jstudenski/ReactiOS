@@ -29,7 +29,7 @@ class App extends Component {
     this.state = {
       // iconColor: 'rgb(199, 200, 201)',
       // iconColor: 'rgb(160, 161, 162)',
-      footerBackground: 'rgb(239, 240, 241)',
+      // footerBackground: 'rgb(239, 240, 241)',
     };
   }
 
