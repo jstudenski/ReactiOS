@@ -51,7 +51,7 @@ class Calendar extends Component {
             className="search-bar"
             type="text"
             name="searchbar"
-            placeholder="App Store"
+            placeholder="Search"
             onFocus={ this.onFocus }
             onBlur={ this.onBlur }
           />
