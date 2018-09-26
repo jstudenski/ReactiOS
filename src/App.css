@@ -94,6 +94,8 @@ ul {
 
 .two h2 {
   border-bottom: none;
+  animation-duration: 4s;
+
 }
 
 .search-bar {
@@ -107,3 +109,9 @@ ul {
 }
 
 textarea, input { outline: none; }
+
+.search-bar:focus {
+  width: 278px;
+  transition: .2s;
+  transform: translate(0, -50px);
+}
