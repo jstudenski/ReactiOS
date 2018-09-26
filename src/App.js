@@ -27,7 +27,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      iconColor: 'rgb(199, 200, 201)',
+      // iconColor: 'rgb(199, 200, 201)',
+      // iconColor: 'rgb(160, 161, 162)',
       footerBackground: 'rgb(239, 240, 241)',
     };
   }
@@ -49,7 +50,7 @@ class App extends Component {
                     fontWeight: 'bold',
                     color: 'rgb(49,123,246)'
                   }}
-                  style={{color: 'rgb(199, 200, 201)'}}
+                  style={{color: 'rgb(160, 161, 162)'}}
                   exact={index === 0 ? true : false}
                   to={page.route}><div>{page.icon}<p>{page.description}</p></div>
                 </NavLink>

@@ -61,3 +61,49 @@ body {
 a:link {
   text-decoration: none;
 }
+
+
+/* clear default style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.test-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(171, 172, 173, 0.5);
+}
+
+.full-width {
+  bottom: 60px;
+  background-color: rgba(205, 206, 207);
+  margin: 20px -20px 0 -20px;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.two {
+  background-color: rgb(239, 240, 241);
+  margin: 0 -20px;
+  padding: 0 20px 10px 20px;
+  border-bottom: 1px solid rgba(171, 172, 173, 0.5);
+}
+
+.two h2 {
+  border-bottom: none;
+}
+
+.search-bar {
+  width: 335px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+textarea, input { outline: none; }
