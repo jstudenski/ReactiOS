@@ -41,7 +41,6 @@ class Calendar extends Component {
     });
   };
 
-
   render() {
     const { height } = this.state;
 
@@ -52,7 +51,6 @@ class Calendar extends Component {
           style={{transform: this.state.transform, transition: this.state.transition}}
         >
           <h2 className='page-heading'>Calendar</h2>
-          test webkit cursor transition
           <form class="g-forms-input">
             <input
               className="search-bar"
