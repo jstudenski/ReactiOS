@@ -128,3 +128,8 @@ textarea, input { outline: none; }
 	left: 11px;
   color: rgb(117, 117, 117);
 }
+
+*{  -webkit-transition:1s;
+  transition:1s;
+  -webkit-transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+  transition-timing-function: cubic-bezier(0.42,0,0.58,1);}

@@ -18,6 +18,7 @@ class Calendar extends Component {
       focused: true,
       height: 56,
       transform: 'translate(0, -50px)',
+      transition: '.25s',
     });
     console.log(event);
   }
@@ -51,7 +52,7 @@ class Calendar extends Component {
           style={{transform: this.state.transform, transition: this.state.transition}}
         >
           <h2 className='page-heading'>Calendar</h2>
-          test cursor transition 
+          test webkit cursor transition
           <form class="g-forms-input">
             <input
               className="search-bar"
