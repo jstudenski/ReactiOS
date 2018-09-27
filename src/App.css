@@ -102,12 +102,13 @@ ul {
 .search-bar {
   caret-color: rgb(49,123,246);
   width: 335px;
-  height: 36px;
+
   border-radius: 8px;
   border: none;
   font-size: 18px;
   box-sizing: border-box;
   padding-left: 36px;
+  height: 36px;
   transition: .25s;
 }
 
@@ -124,10 +125,10 @@ textarea, input { outline: none; }
   position: relative;
 }
 
-.g-forms-input-search-bar-icon {
-  width: 20px;
-	position: absolute;
-	left: 10px;
-	color: rgb(117, 117, 117);
-	font-size: 13px;
+.search-bar-icon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+	left: 11px;
+  color: rgb(117, 117, 117);
 }

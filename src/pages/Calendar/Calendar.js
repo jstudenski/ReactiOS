@@ -65,11 +65,9 @@ class Calendar extends Component {
               onFocus={ this.onFocus }
               onBlur={ this.onBlur }
             />
-                      <div
-            className="g-forms-input-search-bar-icon"
-            >
-            <SearchIcon />
-          </div>
+            <div className="search-bar-icon">
+              <SearchIcon />
+            </div>
           </form>
         </AnimateHeight>
       </div>
