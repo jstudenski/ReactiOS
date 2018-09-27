@@ -17,6 +17,7 @@ class Calendar extends Component {
     this.setState({
       focused: true,
       height: 56,
+      transform: 'translate(0, -50px)',
     });
     console.log(event);
   }
@@ -25,6 +26,7 @@ class Calendar extends Component {
     this.setState({
       focused: false,
       height: 'auto',
+      transform: 'translate(0, 0)',
     });
     console.log(event);
   }
@@ -43,19 +45,11 @@ class Calendar extends Component {
 
     return (
       <div>
-        <AnimateHeight
+        <div
           className='two'
-          height={ height }
+          style={{transform: this.state.transform}}
         >
-          {/* <li>
-            <form class="g-forms-input">
-              <input type="text" class="g-forms-input-search-bar" placeholder="Search SKU..." />
-              <i class="g-forms-input-search-bar-icon fa fa-fw fa-search" />
-            </form>
-          </li> */}
-
           <h2 className='page-heading'>Calendar</h2>
-
           <form class="g-forms-input">
             <input
               className="search-bar"
@@ -64,12 +58,13 @@ class Calendar extends Component {
               placeholder="Search"
               onFocus={ this.onFocus }
               onBlur={ this.onBlur }
+
             />
             <div className="search-bar-icon">
               <SearchIcon />
             </div>
           </form>
-        </AnimateHeight>
+        </div>
       </div>
     );
   }
