@@ -17,7 +17,6 @@ class Segmentcontrol extends React.Component {
     this.setState({
       selectedValue: event.target.value,
     });
-    console.log(this.state);
   }
 
   render() {

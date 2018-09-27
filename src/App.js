@@ -16,19 +16,19 @@ import Calendar from './pages/Calendar/Calendar';
 
 const pages = [
   {
-    route: '/', description: 'Home', component: Home, icon: <HomeIcon />
+    route: '/', description: 'Home', component: Home, icon: <HomeIcon />,
   },
   {
-    route: '/Ellipsis', description: 'Ellipsis', component: Ellipsis, icon: <EllipsisIcon />
+    route: '/Ellipsis', description: 'Ellipsis', component: Ellipsis, icon: <EllipsisIcon />,
   },
   {
-    route: '/Calendar', description: 'Calendar', component: Calendar, icon: <CalendarIcon />
+    route: '/Calendar', description: 'Calendar', component: Calendar, icon: <CalendarIcon />,
   },
   {
-    route: '/Comment', description: 'Comment', component: CommentPage, icon: <CommentIcon />
+    route: '/Comment', description: 'Comment', component: CommentPage, icon: <CommentIcon />,
   },
   {
-    route: '/Envelope', description: 'Envelope', component: Envelope, icon: <EnvelopeIcon />
+    route: '/Envelope', description: 'Envelope', component: Envelope, icon: <EnvelopeIcon />,
   },
 ];
 
@@ -42,11 +42,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="container">
-            {pages.map(page => (
-              <Route exact path={page.route} component={page.component} />
-            ))}
-          </div>
+          {pages.map(page => (
+            <Route exact path={page.route} component={page.component} />
+          ))}
           <div className="footer">
             <div className="footer-icons">
               {pages.map((page, index) => (

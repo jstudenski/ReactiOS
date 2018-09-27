@@ -43,21 +43,25 @@ class Calendar extends Component {
           className="two"
           style={{ transform, transition }}
         >
-          <h2 className="page-heading">Calendar</h2>
+          <div className="page-heading">
+            <h2>Calendar</h2>
+          </div>
           <form className="g-forms-input">
             <input
               className="search-bar"
               type="text"
               name="searchbar"
               placeholder="Search"
-              onFocus={ this.onFocus }
-              onBlur={ this.onBlur }
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
             />
             <div className="search-bar-icon">
               <SearchIcon />
             </div>
           </form>
+
         </div>
+        <div className="container" style={{ transform, transition }}>cal content</div>
       </div>
     );
   }
