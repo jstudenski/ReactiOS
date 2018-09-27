@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AnimateHeight from 'react-animate-height';
+import SearchIcon from '../../components/icons/Search.js';
 
 class Calendar extends Component {
   constructor(props) {
@@ -46,15 +47,30 @@ class Calendar extends Component {
           className='two'
           height={ height }
         >
+          {/* <li>
+            <form class="g-forms-input">
+              <input type="text" class="g-forms-input-search-bar" placeholder="Search SKU..." />
+              <i class="g-forms-input-search-bar-icon fa fa-fw fa-search" />
+            </form>
+          </li> */}
+
           <h2 className='page-heading'>Calendar</h2>
-          <input
-            className="search-bar"
-            type="text"
-            name="searchbar"
-            placeholder="Search"
-            onFocus={ this.onFocus }
-            onBlur={ this.onBlur }
-          />
+
+          <form class="g-forms-input">
+            <input
+              className="search-bar"
+              type="text"
+              name="searchbar"
+              placeholder="Search"
+              onFocus={ this.onFocus }
+              onBlur={ this.onBlur }
+            />
+                      <div
+            className="g-forms-input-search-bar-icon"
+            >
+            <SearchIcon />
+          </div>
+          </form>
         </AnimateHeight>
       </div>
     );

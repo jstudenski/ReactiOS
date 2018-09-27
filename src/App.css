@@ -107,7 +107,7 @@ ul {
   border: none;
   font-size: 18px;
   box-sizing: border-box;
-  padding-left: 15px;
+  padding-left: 36px;
   transition: .25s;
 }
 
@@ -116,4 +116,18 @@ textarea, input { outline: none; }
 .search-bar:focus {
   width: 278px;
   transform: translate(0, -50px);
+}
+
+.g-forms-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.g-forms-input-search-bar-icon {
+  width: 20px;
+	position: absolute;
+	left: 10px;
+	color: rgb(117, 117, 117);
+	font-size: 13px;
 }
