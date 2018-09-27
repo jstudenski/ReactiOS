@@ -4,11 +4,13 @@ html, body {
 }
 
 body {
+  font-family: sans-serif;
   background-color: #f9f9f9;
 }
 
 textarea:focus, input:focus {
   outline: none;
+  background-color: rgba(171, 172, 173, 0.2);
 }
 
 .page-heading {
@@ -77,15 +79,6 @@ ul {
 .test-list li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(171, 172, 173, 0.5);
-}
-
-.full-width {
-  bottom: 60px;
-  background-color: rgba(205, 206, 207);
-  height: 100px;
-  position: fixed;
-  width: 100%;
-  text-align: center;
 }
 
 .two {

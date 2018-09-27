@@ -28,7 +28,6 @@ const Comment = () => (
         <li>three</li>
       </ul>
     </div>
-    <div className="full-width">full-width bottom always show</div>
   </div>
 );
 
