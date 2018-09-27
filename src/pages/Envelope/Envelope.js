@@ -3,9 +3,9 @@ import SegmentControl from '../../components/SegmentControl';
 
 const Envelope = () => (
   <div>
-    <h2 className='page-heading'>Envelope</h2>
+    <h2 className="page-heading">Envelope</h2>
     <SegmentControl
-      color='rebeccapurple'
+      color="rebeccapurple"
       values={['One', 'Two']}
       selectedIndex={1}
     />

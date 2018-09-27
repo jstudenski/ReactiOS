@@ -2,11 +2,14 @@
 
 Quick Start:
 
-yarn install
-yarn start
+``` yarn install ```
 
-mobile version:
+``` yarn start ```
 
-[![mobile QR code](README/qr.png =100x100)](http://react-ios-ui-kit.herokuapp.com/)
+[Live Site](http://react-ios-ui-kit.herokuapp.com/)
 
-<img alt="mobile qr code" src="README/combined-01-72ppi.png" width="200"><br>
+Designed for mobile:
+
+<img src="README/qr.png" width="150" height="150">
+<br><br>
+<img alt="mobile qr code" src="README/combined-01-72ppi.png" width="250">
