@@ -13,6 +13,48 @@ textarea:focus, input:focus {
   background-color: rgba(171, 172, 173, 0.2);
 }
 
+.swatch-grid {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.swatch {
+  margin: 1.6%;
+  width: 30%;
+  float: left;
+  height: 75px;
+  border-radius: 10px;
+  padding: 0.8em;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  flex: 1;
+}
+.red {
+  background-color: rgb(255, 59, 48);
+}
+.orange {
+  background-color: rgb(255 , 149, 0);
+}
+.yellow {
+  background-color: rgb(255, 204, 0);
+}
+.green {
+  background-color: rgb(76, 217, 100);
+}
+.teal-blue {
+  background-color: rgb(90, 200, 250);
+}
+.blue{
+  background-color: rgb(0, 122, 255);
+}
+.puerple {
+  background-color: rgb(88, 86, 214);
+}
+.pink {
+  background-color: rgb(255, 45, 85);
+}
+
 .page-heading {
   padding: 20px 0 10px 0;
   color: #111;
