@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Lucida Grande", "Arial", sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -48,7 +48,7 @@ textarea:focus, input:focus {
 .blue{
   background-color: rgb(0, 122, 255);
 }
-.puerple {
+.purple {
   background-color: rgb(88, 86, 214);
 }
 .pink {
@@ -58,15 +58,37 @@ textarea:focus, input:focus {
 .page-heading {
   padding: 20px 0 10px 0;
   color: #111;
-  font-size: 30px;
   width: 375px;
   margin: 0 auto;
   border-bottom: 1px solid rgba(171, 172, 173, 0.5);
 }
 
-.page-heading h2 {
-  margin: 0;
-  font-size: 30px;
+
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+h5 {
+  font-size: 17px;
+}
+h6 {
+  font-size: 72px;
+}
+p {
+  font-size: 17px;
 }
 
 .container {
