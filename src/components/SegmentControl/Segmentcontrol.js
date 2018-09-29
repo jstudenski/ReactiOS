@@ -26,12 +26,13 @@ class Segmentcontrol extends React.Component {
       height: 100,
       display: 'inline-block',
     };
+    const domId = 'hi';
     return (
       <div style={customStyle}>
         <div className="container">
           <div className="segment_control_container" onChange={this.handleChange}>
-            <input type="radio" id="option_1" name="option_control" value="Option 1" />
-            <label className="segment_control" htmlFor="option_1">Option 1</label>
+            <input type="radio" id={domId} name="option_control" value="Option 1" />
+            <label className="segment_control" htmlFor={domId}>Option 1</label>
             <input type="radio" id="option_2" name="option_control" value="Option 2" />
             <label className="segment_control" htmlFor="option_2">Option 2</label>
             <input type="radio" id="option_3" name="option_control" value="Option 3" />
