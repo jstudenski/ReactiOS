@@ -1,9 +1,11 @@
 import React from 'react';
 import SegmentControl from '../../components/SegmentControl';
+import Header from '../../components/Header';
 
 const Envelope = () => (
   <div>
-    <h2 className="page-heading">Envelope</h2>
+    <Header title="Envelope" />
+    {/* <h2 className="page-heading">Envelope</h2> */}
     <div className="container">
       <SegmentControl
         color="rebeccapurple"

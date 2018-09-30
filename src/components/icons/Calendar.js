@@ -8,7 +8,6 @@ const Calendar = () => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
-    className="svg-inline--fa fa-calendar fa-w-14 fa-2x"
   >
     <path
       fill="currentColor"
