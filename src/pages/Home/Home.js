@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../../components/Header';
 
 const Home = () => (
   <div>
-    <h2 className="page-heading">Home</h2>
+    <Header title="Home" secondary={false} />
     <div className="container swatch-grid">
       <div className="swatch red">Red</div>
       <div className="swatch orange">Orange</div>

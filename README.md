@@ -26,3 +26,5 @@
 | title | string | `'Title'` | title to appear on the page |
 | color | string | `#111111` | title font color |
 | hr | boolean | `true` | header has bottom border |
+| secondadry | boolean | `false` | alternate style |
+| search | boolean | `false` | include a search bar |

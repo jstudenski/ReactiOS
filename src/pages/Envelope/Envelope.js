@@ -4,8 +4,7 @@ import Header from '../../components/Header';
 
 const Envelope = () => (
   <div>
-    <Header title="Envelope" />
-    {/* <h2 className="page-heading">Envelope</h2> */}
+    <Header title="Envelope" secondary={false} search={false} />
     <div className="container">
       <SegmentControl
         color="rebeccapurple"

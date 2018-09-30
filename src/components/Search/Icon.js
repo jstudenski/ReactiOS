@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => (
+const Icon = () => (
   <svg
     aria-hidden="true"
     data-prefix="far"
@@ -16,4 +16,4 @@ const Home = () => (
   </svg>
 );
 
-export default Home;
+export default Icon;

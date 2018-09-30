@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../../components/Header';
 
 const Ellipsis = () => (
   <div>
-    <h2 className="page-heading">Ellipsis</h2>
+    <Header title="Ellipsis" secondary={true} search={false}/>
     <div className="container">...</div>
     <h1>h1 2:39</h1>
     <h2>h2</h2>

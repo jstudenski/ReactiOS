@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../../components/Header';
 
 const Comment = () => (
   <div>
-    <h2 className="page-heading">Comment</h2>
+    <Header title="Comment" secondary={true}  search={true}/>
     <div className="container">
       <ul className="test-list">
         <li>one</li>
