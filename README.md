@@ -17,6 +17,7 @@
 #### Screenshots
 <img alt="mobile qr code" src="README/combined-01-72ppi.png" width="250">
 
+*iPhone XS iOS 12.0, Chrome* 
 
 ### Components
 #### Header
