@@ -1,4 +1,4 @@
-# ios Style for React
+# ReactiOS
 
 #####  A react component library designed for mobile inspired by iOS.
 
@@ -17,7 +17,7 @@
 #### Screenshots
 <img alt="mobile qr code" src="README/combined-01-72ppi.png" width="250">
 
-*iPhone XS iOS 12.0, Chrome* 
+*iPhone XS iOS 12.0, Chrome*
 
 ### Components
 #### Header
