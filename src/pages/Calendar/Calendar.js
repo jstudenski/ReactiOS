@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import Header from '../../components/Header';
 
 class Calendar extends React.Component {
+  // context testing
   static contextTypes = {
     locale: PropTypes.object,
   }
+  //
 
   render() {
     return (

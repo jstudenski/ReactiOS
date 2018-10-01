@@ -29,3 +29,7 @@
 | hr | boolean | `true` | header has bottom border |
 | secondadry | boolean | `false` | alternate style |
 | search | boolean | `false` | include a search bar |
+
+#### Footer
+| Name         | Type    | Default | Description |
+| ------------ | ------- | ------- | ----------- |

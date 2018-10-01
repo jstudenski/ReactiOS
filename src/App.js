@@ -8,12 +8,15 @@ import EllipsisIcon from './components/icons/Ellipsis';
 import CalendarIcon from './components/icons/Calendar';
 import CommentIcon from './components/icons/Comment';
 import EnvelopeIcon from './components/icons/Envelope';
-
+// Pages
 import Home from './pages/Home/Home';
 import Ellipsis from './pages/Ellipsis/Ellipsis';
 import CommentPage from './pages/Comment/Comment';
 import Envelope from './pages/Envelope/Envelope';
 import Calendar from './pages/Calendar/Calendar';
+// Compenents
+import Footer from './components/Footer';
+
 
 const pages = [
   {
@@ -44,6 +47,7 @@ class App extends Component {
     this.state = {};
   }
 
+  // context testing
   static childContextTypes = {
     locale: PropTypes.object,
   }
@@ -51,6 +55,7 @@ class App extends Component {
   getChildContext() {
     return {locale: locale.en}
   }
+  //
 
   render() {
     return (
@@ -59,6 +64,7 @@ class App extends Component {
           {pages.map(page => (
             <Route exact path={page.route} component={page.component} />
           ))}
+          <Footer />
           <div className="footer">
             <div className="footer-icons">
               {pages.map((page, index) => (
