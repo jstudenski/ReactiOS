@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
@@ -32,10 +33,23 @@ const pages = [
   },
 ];
 
+const en = "hi"
+const pt = "hello"
+
+const locale = {en, pt};
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  static childContextTypes = {
+    locale: PropTypes.object,
+  }
+
+  getChildContext() {
+    return {locale: locale.en}
   }
 
   render() {

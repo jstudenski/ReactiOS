@@ -26,12 +26,12 @@ class Header extends React.Component {
 
   render() {
     const {
-      title, search, secondary, color, hr
+      title, search, secondary, color, hr,
     } = this.props;
     const { transform } = this.state;
     const style = {
       padding: secondary ? '20px 20px 10px 20px' : '20px 0 10px 0',
-      margin: secondary ? '20px 0 10px 0' : '20px 20px 10px 20px',
+      margin: secondary ? '0 0 10px 0' : '0 20px 10px 20px',
       color,
       borderBottom: hr ? '1px solid rgba(171, 172, 173, 0.5)' : null,
       backgroundColor: secondary ? 'rgb(239, 240, 241)' : null,
