@@ -37,7 +37,7 @@ class Header extends React.Component {
       backgroundColor: secondary ? 'rgb(239, 240, 241)' : null,
       transition: '.25s',
       transform,
-    }
+    };
 
     return (
       <header style={style}>
@@ -64,4 +64,4 @@ Header.defaultProps = {
   search: false,
 };
 
-export default Header
+export default Header;
