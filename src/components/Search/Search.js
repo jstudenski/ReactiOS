@@ -2,7 +2,6 @@ import React from 'react';
 import Icon from './Icon';
 
 class Search extends React.Component {
-
   render() {
     return (
       <form className="g-forms-input">

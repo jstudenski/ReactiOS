@@ -5,7 +5,11 @@ class Calendar extends Component {
   render() {
     return (
       <div>
-        <Header title="Calendar" secondary={true}  search={true}/>
+        <Header
+          title="Calendar"
+          secondary
+          search
+        />
       </div>
     );
   }

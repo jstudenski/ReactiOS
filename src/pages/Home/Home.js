@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 const Home = () => (
   <div>
     <Header title="Home" secondary={false} />
-    <div className="container swatch-grid">
+    <div className="container">
       <div className="swatch red">Red</div>
       <div className="swatch orange">Orange</div>
       <div className="swatch yellow">Yellow</div>

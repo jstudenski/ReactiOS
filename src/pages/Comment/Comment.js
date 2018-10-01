@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 
 const Comment = () => (
   <div>
-    <Header title="Comment" secondary={true}  search={true}/>
+    <Header title="Comment" secondary search />
     <div className="container">
       <ul className="test-list">
         <li>one</li>
@@ -13,20 +13,6 @@ const Comment = () => (
         <li>two</li>
         <li>three</li>
         <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
       </ul>
     </div>
   </div>

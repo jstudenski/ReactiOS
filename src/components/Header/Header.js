@@ -6,7 +6,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      height: 'auto',
+      transform: 'translate(0, 0)',
     };
     this.onFocus = this.onFocus.bind(this);
     this.onBlur = this.onBlur.bind(this);
@@ -14,41 +14,37 @@ class Header extends React.Component {
 
   onFocus() {
     this.setState({
-      height: 56,
       transform: 'translate(0, -50px)',
     });
   }
 
   onBlur() {
     this.setState({
-      height: 'auto',
       transform: 'translate(0, 0)',
     });
   }
 
   render() {
-    // const { transform, transition } = this.state;
+    const {
+      title, search, secondary, color, hr
+    } = this.props;
+    const { transform } = this.state;
     const style = {
-      paddingTop: 20,
-      paddingBottom: 10,
-      paddingLeft: this.props.secondary ? 20 : 0,
-      paddingRight: this.props.secondary ? 20 : 0,
-      marginLeft:  this.props.secondary ? 0 : 20,
-      marginRight:  this.props.secondary ? 0 : 20,
-      marginBottom: 10,
-      color: this.props.color,
-      borderBottom: this.props.hr ? '1px solid rgba(171, 172, 173, 0.5)':null,
-      backgroundColor:  this.props.secondary ? 'rgb(239, 240, 241)' : null,
+      padding: secondary ? '20px 20px 10px 20px' : '20px 0 10px 0',
+      margin: secondary ? '20px 0 10px 0' : '20px 20px 10px 20px',
+      color,
+      borderBottom: hr ? '1px solid rgba(171, 172, 173, 0.5)' : null,
+      backgroundColor: secondary ? 'rgb(239, 240, 241)' : null,
       transition: '.25s',
-      transform: this.state.transform,
+      transform,
     }
 
     return (
-      <div style={ style } >
-        <h2>{this.props.title}</h2>
-        {this.props.search ? <Search onFocus={this.onFocus} onBlur={this.onBlur}/> : null }
-      </div>
-    )
+      <header style={style}>
+        <h2>{title}</h2>
+        { search ? <Search onFocus={this.onFocus} onBlur={this.onBlur} /> : null }
+      </header>
+    );
   }
 }
 

@@ -3,12 +3,12 @@ import Header from '../../components/Header';
 
 const Ellipsis = () => (
   <div>
-    <Header title="Ellipsis" secondary={true} search={false}/>
+    <Header title="Ellipsis" secondary search={false} />
     <div className="container">...</div>
     <h1>h1 2:39</h1>
     <h2>h2</h2>
     <h3>h3</h3>
-        <h3 className="medium">h3 medium</h3>
+    <h3 className="medium">h3 medium</h3>
     <h4>h4</h4>
     <h5>h5</h5>
     <h6>h6</h6>
