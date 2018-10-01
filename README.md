@@ -1,25 +1,29 @@
-# ReactiOS
+## ReactiOS
 
-#####  A react component library designed for mobile inspired by iOS.
+A react component library designed for mobile inspired by iOS.
 
-###  Quick Start:
+### Quick Start
 
-``` yarn install ```
+```yarn install```
 
-``` yarn start ```
+```yarn start```
 
-#### Links
+### Links
+
 [Live Site](http://react-ios-ui-kit.herokuapp.com/)
 
-<img src="README/qr.png" width="150" height="150">
+<img alt="mobile qr code" src="README/qr.png" width="150" height="150">
 <br>
 
-#### Screenshots
-<img alt="mobile qr code" src="README/combined-01-72ppi.png" width="250">
+### Screenshots
 
 *iPhone XS iOS 12.0, Chrome*
+<img alt="iPhone XS screenshot" src="README/combined-01-72ppi.png" width="250">
+
+
 
 ### Components
+
 #### Header
 
 | Name         | Type    | Default | Description |
@@ -31,5 +35,6 @@
 | search | boolean | `false` | include a search bar |
 
 #### Footer
+
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
