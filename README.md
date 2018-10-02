@@ -17,10 +17,9 @@ A react component library designed for mobile inspired by iOS.
 
 ### Screenshots
 
-*iPhone XS iOS 12.0, Chrome*
 <img alt="iPhone XS screenshot" src="README/combined-01-72ppi.png" width="250">
 
-
+*iPhone XS iOS 12.0, Chrome*
 
 ### Components
 
