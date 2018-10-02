@@ -6,23 +6,13 @@ import theme from '../../theme';
 const Home = () => (
   <div>
     <Header title="Home" secondary={false} />
-
     <Context.Provider>
       <div className="container">
-        <div className="swatch" style={{ backgroundColor: theme.color.red }}>Red</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.orange }}>Orange</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.yellow }}>Yellow</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.green }}>Green</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.tealBlue }}>Teal Blue</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.blue }}>Blue</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.purple }}>Purple</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.pink }}>Pink</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.lightGrey, color: 'black' }}>Light Grey</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.grey }}>Grey</div>
-        <div className="swatch" style={{ backgroundColor: theme.color.darkGrey }}>Dark Grey</div>
+        {Object.keys(theme.color).map(page => (
+          <div className="swatch" style={{ backgroundColor: theme.color[page] }}>{page}</div>
+        ))}
       </div>
     </Context.Provider>
-
   </div>
 );
 
