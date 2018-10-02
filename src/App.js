@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
 
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomeIcon from './components/icons/Home';
 import EllipsisIcon from './components/icons/Ellipsis';
 import CalendarIcon from './components/icons/Calendar';
@@ -42,7 +41,6 @@ class App extends Component {
   }
 
   render() {
-    console.log()
     return (
       <Router>
         <div className="App">

@@ -3,8 +3,6 @@ import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 
-
-
 class Footer extends React.Component {
   constructor(props) {
     super(props);
@@ -46,8 +44,6 @@ class Footer extends React.Component {
       </footer>
     );
   }
-
-
 };
 
 Footer.propTypes = {
