@@ -9,6 +9,7 @@ const theme = {
     purple: 'rgb(88, 86, 214)',
     pink: 'rgb(255, 45, 85)',
     darkGrey: 'rgb(140, 140, 140)',
+    grey: 'rgb(215, 216, 217)',
     lightGrey: 'rgb(239, 240, 241)',
   },
 };

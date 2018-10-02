@@ -39,6 +39,9 @@ A react component library designed for mobile inspired by iOS.
 | color | string | `theme.color.darkGrey` | link color |
 | activeColor | string | `theme.color.blue` | active link color |
 | labels | boolean | `true` | display labels under icons |
+| borderColor | string | `theme.color.grey` | top border color |
+| backgroundColor | string | `theme.color.lightGrey` | background color |
+
 
 #### Search
 
