@@ -36,3 +36,5 @@ A react component library designed for mobile inspired by iOS.
 
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
+| activeStyle | string | `theme.color.blue` | active link color |
+| labels | boolean | `true` | display labels under icons |

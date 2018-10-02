@@ -2,7 +2,7 @@ import React from 'react';
 import theme from './theme';
 
 const ThemeContext = React.createContext({
-  lang: theme,
+  theme: theme,
 //  toggleLanguage: () => { },
 });
 

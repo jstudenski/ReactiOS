@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+// import Context from '../../context';
+import theme from '../../theme';
 
 const Footer = props => (
   <footer>
@@ -8,7 +11,7 @@ const Footer = props => (
         <NavLink
           activeStyle={{
             fontWeight: 'bold',
-            color: 'rgb(49,123,246)',
+            color: props.activeStyle,
           }}
           style={{
             color: 'rgb(160, 161, 162)',
@@ -18,12 +21,23 @@ const Footer = props => (
         >
           <div>
             {page.icon}
-            <p>{page.description}</p>
+            {props.labels ? <p>{page.description}</p> : null}
           </div>
         </NavLink>
       ))}
     </div>
   </footer>
 );
+
+
+Footer.propTypes = {
+  activeStyle: PropTypes.string,
+  labels: PropTypes.bool,
+};
+
+Footer.defaultProps = {
+  activeStyle: theme.color.blue,
+  labels: true,
+};
 
 export default Footer;
