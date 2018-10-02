@@ -13,7 +13,6 @@ A react component library designed for mobile inspired by iOS.
 [Live Site](http://react-ios-ui-kit.herokuapp.com/)
 
 <img alt="mobile qr code" src="README/qr.png" width="150" height="150">
-<br>
 
 ### Screenshots
 
