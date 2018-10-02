@@ -124,32 +124,6 @@ ul {
   border-bottom: 1px solid rgba(171, 172, 173, 0.5);
 }
 
-.search-bar {
-  caret-color: rgb(0, 122, 255);
-  width: 100%;
-  border-radius: 8px;
-  border: none;
-  font-size: 18px;
-  box-sizing: border-box;
-  padding-left: 36px;
-  height: 36px;
-  margin-top: 5px;
-}
-
-.g-forms-input {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.search-bar-icon {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 11px;
-  color: rgb(117, 117, 117);
-}
-
 .side-padding {
   padding-left: 20px;
   padding-right: 20px;

@@ -49,7 +49,7 @@ class App extends Component {
           {pages.map(page => (
             <Route exact path={page.route} component={page.component} />
           ))}
-          <Footer pages={pages}/>
+          <Footer pages={pages} />
         </div>
       </Router>
     );

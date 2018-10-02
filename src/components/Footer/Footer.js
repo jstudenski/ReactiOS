@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import Context from '../../context';
 import theme from '../../theme';
 
 const Footer = props => (
@@ -11,11 +10,9 @@ const Footer = props => (
         <NavLink
           activeStyle={{
             fontWeight: 'bold',
-            color: props.activeStyle,
+            color: props.activeColor,
           }}
-          style={{
-            color: 'rgb(160, 161, 162)',
-          }}
+          style={{ color: props.color }}
           exact={index === 0}
           to={page.route}
         >
@@ -29,14 +26,15 @@ const Footer = props => (
   </footer>
 );
 
-
 Footer.propTypes = {
-  activeStyle: PropTypes.string,
+  activeColor: PropTypes.string,
+  color: PropTypes.string,
   labels: PropTypes.bool,
 };
 
 Footer.defaultProps = {
-  activeStyle: theme.color.blue,
+  activeColor: theme.color.blue,
+  color: theme.color.darkGrey,
   labels: true,
 };
 

@@ -36,5 +36,14 @@ A react component library designed for mobile inspired by iOS.
 
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
-| activeStyle | string | `theme.color.blue` | active link color |
+| color | string | `theme.color.darkGrey` | link color |
+| activeColor | string | `theme.color.blue` | active link color |
 | labels | boolean | `true` | display labels under icons |
+
+#### Search
+
+| Name         | Type    | Default | Description |
+| ------------ | ------- | ------- | ----------- |
+| icon | boolean | `true` | display search bar icon |
+| iconColor | string | `theme.color.darkGrey` | magnifying glass icon color |
+| cursorColor | string | `theme.color.blue` | sets the color of the text insertion caret |

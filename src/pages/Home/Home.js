@@ -17,6 +17,7 @@ const Home = () => (
         <div className="swatch" style={{ backgroundColor: theme.color.blue }}>Blue</div>
         <div className="swatch" style={{ backgroundColor: theme.color.purple }}>Purple</div>
         <div className="swatch" style={{ backgroundColor: theme.color.pink }}>Pink</div>
+        <div className="swatch" style={{ backgroundColor: theme.color.darkGrey }}>Dark Grey</div>
       </div>
     </Context.Provider>
 

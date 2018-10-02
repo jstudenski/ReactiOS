@@ -1,24 +1,70 @@
 import React from 'react';
 import Icon from './Icon';
+import PropTypes from 'prop-types';
+import theme from '../../theme';
 
 class Search extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const searchBar = {
+      display: 'flex',
+      alignItems: 'center',
+      position: 'relative',
+    }
+
+    const searchInput = {
+      caretColor: this.props.cursorColor,
+      width: '100%',
+      borderRadius: 10,
+      border: 'none',
+      fontSize: 18,
+      boxSizing: 'border-box',
+      paddingLeft: this.props.icon ? 32 : 12,
+      height: 36,
+      marginTop: 5,
+    }
+
+    const icon = {
+      width: 16,
+      height: 16,
+      paddingTop: 5,
+      position: 'absolute',
+      left: 9,
+      color: this.props.iconColor,
+      display: this.props.icon ? 'inline' : 'none',
+    }
+
     return (
-      <form className="g-forms-input">
+      <form style={ searchBar }>
         <input
-          className="search-bar"
+          style={ searchInput }
           type="text"
           name="searchbar"
           placeholder="Search"
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
         />
-        <div className="search-bar-icon">
+        <div style={ icon }>
           <Icon />
         </div>
       </form>
     )
   }
 }
+
+Search.propTypes = {
+  icon: PropTypes.bool,
+  iconColor: PropTypes.string,
+  cursorColor: PropTypes.string,
+};
+
+Search.defaultProps = {
+  icon: true,
+  iconColor: theme.color.darkGrey,
+  cursorColor: theme.color.blue,
+};
 
 export default Search
