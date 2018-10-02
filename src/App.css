@@ -26,38 +26,6 @@ textarea:focus, input:focus {
   flex: 1;
 }
 
-.red {
-  background-color: rgb(255, 59, 48);
-}
-
-.orange {
-  background-color: rgb(255, 149, 0);
-}
-
-.yellow {
-  background-color: rgb(255, 204, 0);
-}
-
-.green {
-  background-color: rgb(76, 217, 100);
-}
-
-.teal-blue {
-  background-color: rgb(90, 200, 250);
-}
-
-.blue {
-  background-color: rgb(0, 122, 255);
-}
-
-.purple {
-  background-color: rgb(88, 86, 214);
-}
-
-.pink {
-  background-color: rgb(255, 45, 85);
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }

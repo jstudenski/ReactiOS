@@ -17,7 +17,6 @@ import Calendar from './pages/Calendar/Calendar';
 // Compenents
 import Footer from './components/Footer';
 
-
 const pages = [
   {
     route: '/', description: 'Home', component: Home, icon: <HomeIcon />,
@@ -36,28 +35,14 @@ const pages = [
   },
 ];
 
-const en = "hi"
-const pt = "hello"
-
-const locale = {en, pt};
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
-  // context testing
-  static childContextTypes = {
-    locale: PropTypes.object,
-  }
-
-  getChildContext() {
-    return {locale: locale.en}
-  }
-  //
-
   render() {
+    console.log()
     return (
       <Router>
         <div className="App">

@@ -3,12 +3,6 @@ import PropTypes from 'prop-types';
 import Header from '../../components/Header';
 
 class Calendar extends React.Component {
-  // context testing
-  static contextTypes = {
-    locale: PropTypes.object,
-  }
-  //
-
   render() {
     return (
       <div>
@@ -17,12 +11,9 @@ class Calendar extends React.Component {
           secondary
           search
         />
-        <p>{this.context.locale}</p>
       </div>
     )
-
   }
-
 };
 
 export default Calendar;
