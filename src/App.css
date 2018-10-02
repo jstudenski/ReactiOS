@@ -106,7 +106,7 @@ p {
   margin: 0 auto;
 }
 
-.footer {
+footer {
   background-color: rgb(239, 240, 241);
   width: 100%;
   font-size: 30px;
@@ -127,7 +127,7 @@ p {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.footer-icons svg {
+footer svg {
   padding-top: 10px;
   height: 40px;
   width: 50px;
@@ -135,7 +135,7 @@ p {
   box-sizing: border-box;
 }
 
-.footer-icons p {
+footer p {
   font-size: 10px;
   margin: 0;
   text-align: center;

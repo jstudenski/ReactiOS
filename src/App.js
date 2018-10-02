@@ -64,27 +64,7 @@ class App extends Component {
           {pages.map(page => (
             <Route exact path={page.route} component={page.component} />
           ))}
-          <Footer />
-          <div className="footer">
-            <div className="footer-icons">
-              {pages.map((page, index) => (
-                <NavLink
-                  activeStyle={{
-                    fontWeight: 'bold',
-                    color: 'rgb(49,123,246)',
-                  }}
-                  style={{ color: 'rgb(160, 161, 162)' }}
-                  exact={index === 0}
-                  to={page.route}
-                >
-                  <div>
-                    {page.icon}
-                    <p>{page.description}</p>
-                  </div>
-                </NavLink>
-              ))}
-            </div>
-          </div>
+          <Footer pages={pages}/>
         </div>
       </Router>
     );
