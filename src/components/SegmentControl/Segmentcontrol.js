@@ -9,7 +9,6 @@ class Segmentcontrol extends React.Component {
       checkedIndex: 0,
       selectedValue: 'Option 2',
     };
-    // this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -49,7 +48,7 @@ Segmentcontrol.propTypes = {
 };
 
 Segmentcontrol.defaultProps = {
-  color: 'salmon',
+  // color: 'salmon',
   values: ['Option One', 'Option Two', 'Option Three'],
   selectedIndex: 0,
 };
