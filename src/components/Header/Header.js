@@ -31,7 +31,7 @@ class Header extends React.Component {
     const { transform } = this.state;
     const style = {
       padding: secondary ? '20px 20px 10px 20px' : '20px 0 10px 0',
-      margin: secondary ? '0 0 10px 0' : '0 20px 10px 20px',
+      margin: secondary ? '0 0 0 0' : '0 20px 0 20px',
       color,
       borderBottom: hr && '1px solid rgba(171, 172, 173, 0.5)',
       backgroundColor: secondary && 'rgb(239, 240, 241)',
@@ -42,8 +42,8 @@ class Header extends React.Component {
     return (
       <header style={style}>
         <div style={{ maxWidth: 375, margin: '0 auto' }}>
-        <h2>{title}</h2>
-        { search ? <Search onFocus={this.onFocus} onBlur={this.onBlur} /> : null }
+          <h2>{title}</h2>
+          { search && <Search onFocus={this.onFocus} onBlur={this.onBlur} /> }
         </div>
       </header>
     );

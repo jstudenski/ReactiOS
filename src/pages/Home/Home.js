@@ -9,7 +9,21 @@ const Home = () => (
     <Context.Provider>
       <div className="container">
         {Object.keys(theme.color).map(page => (
-          <div className="swatch" style={{ backgroundColor: theme.color[page] }}>{page}</div>
+          <div style={{
+            backgroundColor: theme.color[page],
+            margin: '1.6%',
+            width: '30%',
+            float: 'left',
+            height: 75,
+            borderRadius: 10,
+            padding: '0.8em',
+            boxSizing: 'border-box',
+            textAlign: 'center',
+            color: '#fff',
+            flex: 1,
+          }}>
+            {page}
+          </div>
         ))}
       </div>
     </Context.Provider>

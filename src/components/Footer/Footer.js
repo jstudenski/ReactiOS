@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import theme from '../../theme';
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
-    const { backgroundColor, borderColor, pages, activeColor, color, icon, labels, description } = this.props;
+    const { backgroundColor, borderColor, pages, activeColor, color, labels } = this.props;
     const footerStyle = {
       borderTop: `1px solid ${borderColor}`,
       backgroundColor: backgroundColor,

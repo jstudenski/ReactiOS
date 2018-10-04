@@ -13,19 +13,6 @@ textarea:focus, input:focus {
   background-color: rgba(171, 172, 173, 0.2);
 }
 
-.swatch {
-  margin: 1.6%;
-  width: 30%;
-  float: left;
-  height: 75px;
-  border-radius: 10px;
-  padding: 0.8em;
-  box-sizing: border-box;
-  text-align: center;
-  color: #fff;
-  flex: 1;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -100,20 +87,14 @@ a:link {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .test-list li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(171, 172, 173, 0.5);
 }
-li:last-child {
+
+div li:last-child {
   border-bottom: none;
 }
-
 
 .side-padding {
   padding-left: 20px;

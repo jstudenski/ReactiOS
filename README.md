@@ -1,8 +1,8 @@
-## ReactiOS
+# ReactiOS
 
 A react component library designed for mobile inspired by iOS.
 
-### Quick Start
+## Quick Start
 
 ```yarn install```
 
@@ -41,7 +41,6 @@ A react component library designed for mobile inspired by iOS.
 | labels | boolean | `true` | display labels under icons |
 | borderColor | string | `theme.color.grey` | top border color |
 | backgroundColor | string | `theme.color.lightGrey` | background color |
-
 
 #### Search
 
