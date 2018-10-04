@@ -33,8 +33,8 @@ class Header extends React.Component {
       padding: secondary ? '20px 20px 10px 20px' : '20px 0 10px 0',
       margin: secondary ? '0 0 10px 0' : '0 20px 10px 20px',
       color,
-      borderBottom: hr ? '1px solid rgba(171, 172, 173, 0.5)' : null,
-      backgroundColor: secondary ? 'rgb(239, 240, 241)' : null,
+      borderBottom: hr && '1px solid rgba(171, 172, 173, 0.5)',
+      backgroundColor: secondary && 'rgb(239, 240, 241)',
       transition: '.25s',
       transform,
     };

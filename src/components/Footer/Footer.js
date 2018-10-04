@@ -36,7 +36,7 @@ class Footer extends React.Component {
             >
               <div>
                 {page.icon}
-                {labels ? <p>{page.description}</p> : null}
+                {labels && <p>{page.description}</p>}
               </div>
             </NavLink>
           ))}
