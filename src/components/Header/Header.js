@@ -41,8 +41,10 @@ class Header extends React.Component {
 
     return (
       <header style={style}>
+        <div style={{ maxWidth: 375, margin: '0 auto' }}>
         <h2>{title}</h2>
         { search ? <Search onFocus={this.onFocus} onBlur={this.onBlur} /> : null }
+        </div>
       </header>
     );
   }
