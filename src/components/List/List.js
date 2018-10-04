@@ -23,7 +23,7 @@ const List = props => (
               alignItems: 'center',
             }}
           >
-            <h5>{group.title}</h5>
+            <h6>{group.title}</h6>
           </div>
           {group.items.map(item => (
             <li>{item}</li>
