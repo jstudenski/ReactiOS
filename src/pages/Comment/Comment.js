@@ -15,23 +15,17 @@ const Comment = () => (
         <li>three</li>
         <li>one</li>
       </ul>
-
-
     </div>
-      <div 
-        style={{
-          width: '100%',
-          height: 30,
-          backgroundColor: theme.color.lightGrey,
-          borderWidth: 1,
-          borderColor: '#cdcecf',
-          borderStyle: 'solid',
-        }}
-      />
-
-
-
-
+    <div
+      style={{
+        width: '100%',
+        height: 30,
+        backgroundColor: theme.color.lightGrey,
+        borderWidth: 1,
+        borderColor: '#cdcecf',
+        borderStyle: 'solid',
+      }}
+    />
   </div>
 );
 
