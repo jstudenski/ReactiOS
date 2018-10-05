@@ -17,20 +17,23 @@ const Home = () => (
           flexWrap: 'wrap',
         }}
       >
-        {Object.keys(color).map(page => (
-          <div style={{
-            backgroundColor: color[page],
-            // margin: '1.6%',
-            width: '30%',
-            float: 'left',
-            height: 75,
-            borderRadius: 10,
-            padding: '0.8em',
-            textAlign: 'center',
-            color: '#fff',
-            flex: 1,
-          }}>
-            {page}
+        {Object.keys(color).map(value => (
+          <div
+            key={value}
+            style={{
+              backgroundColor: color[value],
+              // margin: '1.6%',
+              width: '30%',
+              float: 'left',
+              height: 75,
+              borderRadius: 10,
+              padding: '0.8em',
+              textAlign: 'center',
+              color: '#fff',
+              flex: 1,
+            }}
+          >
+            {value}
           </div>
         ))}
       </div>

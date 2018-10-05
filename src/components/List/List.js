@@ -1,11 +1,10 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import theme from '../../theme';
 
 const { style, color } = theme;
 
-const List = props => (
-
+const List = ({ items }) => (
   <div className="container">
     <ul
       className="test-list"
@@ -15,9 +14,10 @@ const List = props => (
         padding: 0,
       }}
     >
-      {props.items.map(group => (
+      {items.map((group, indexA) => (
         <div>
           <div
+            key={indexA}
             style={{
               width: '100%',
               height: 30,
@@ -29,13 +29,14 @@ const List = props => (
           >
             <h6>{group.title}</h6>
           </div>
-          {group.items.map((item, index)=> (
+          {group.items.map((item, indexB) => (
             <li
               style={{
                 padding: '10px 0',
                 margin: `0 ${style.padding}`,
-                borderBottom: (index + 1 === group.items.length) ? 'none' : '1px solid rgba(171, 172, 173, 0.5)',
+                borderBottom: (indexB + 1 === group.items.length) ? 'none' : '1px solid rgba(171, 172, 173, 0.5)',
               }}
+              key={item}
             >
               {item}
             </li>
@@ -61,11 +62,7 @@ const List = props => (
 );
 
 List.propTypes = {
-  // title: PropTypes.string,
-};
-
-List.defaultProps = {
-  // title: 'Title',
+  items: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default List;

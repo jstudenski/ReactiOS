@@ -36,6 +36,7 @@ const Footer = ({
           }}
           exact={index === 0}
           to={page.route}
+          key={page.description}
         >
           <div>
             {page.icon}

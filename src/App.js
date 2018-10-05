@@ -46,7 +46,7 @@ class App extends Component {
         <div className="App">
           <div style={{maxWidth: 375, margin: '0 auto'}}>
             {pages.map(page => (
-              <Route exact path={page.route} component={page.component} />
+              <Route exact key={page.route} path={page.route} component={page.component} />
             ))}
           </div>
           <Footer pages={pages} />
