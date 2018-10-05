@@ -3,21 +3,23 @@ import Header from '../../components/Header';
 import Context from '../../context';
 import theme from '../../theme';
 
+const { style, color } = theme;
+
 const Home = () => (
   <div>
     <Header title="Home" secondary={false} />
     <Context.Provider>
       <div
         style={{
-          padding: `0 ${theme.style.padding}`,
+          padding: `0 ${style.padding}`,
           justifyContent: 'space-between',
           display: 'flex',
           flexWrap: 'wrap',
         }}
       >
-        {Object.keys(theme.color).map(page => (
+        {Object.keys(color).map(page => (
           <div style={{
-            backgroundColor: theme.color[page],
+            backgroundColor: color[page],
             // margin: '1.6%',
             width: '30%',
             float: 'left',

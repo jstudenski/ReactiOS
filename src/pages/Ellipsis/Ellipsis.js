@@ -2,10 +2,12 @@ import React from 'react';
 import Header from '../../components/Header';
 import theme from '../../theme';
 
+const { style } = theme;
+
 const Ellipsis = () => (
   <div>
     <Header title="Ellipsis" secondary search={false} />
-    <div style={{ padding: theme.style.padding }}>
+    <div style={{ padding: style.padding }}>
       <h1>h1</h1>
       <h2>h2</h2>
       <h3>h3</h3>

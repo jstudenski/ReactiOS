@@ -3,6 +3,8 @@ import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 
+const { color } = theme;
+
 class Footer extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -18,7 +20,7 @@ class Footer extends React.Component {
       position: 'fixed',
       bottom: 0,
       paddingBottom: 10,
-    }
+    };
 
     return (
       <footer style={footerStyle}>
@@ -29,7 +31,10 @@ class Footer extends React.Component {
                 fontWeight: 'bold',
                 color: activeColor,
               }}
-              style={{ color: color, margin: '0px 10px' }}
+              style={{
+                color: color,
+                margin: '0px 10px',
+              }}
               exact={index === 0}
               to={page.route}
             >
@@ -54,10 +59,10 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-  activeColor: theme.color.blue,
-  borderColor: theme.color.grey,
-  backgroundColor: theme.color.lightGrey,
-  color: theme.color.darkGrey,
+  activeColor: color.blue,
+  borderColor: color.grey,
+  backgroundColor: color.lightGrey,
+  color: color.darkGrey,
   labels: true,
 };
 

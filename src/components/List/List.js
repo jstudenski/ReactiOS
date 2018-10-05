@@ -2,7 +2,10 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import theme from '../../theme';
 
+const { style, color } = theme;
+
 const List = props => (
+
   <div className="container">
     <ul
       className="test-list"
@@ -18,16 +21,24 @@ const List = props => (
             style={{
               width: '100%',
               height: 30,
-              backgroundColor: theme.color.lightGrey,
+              backgroundColor: color.lightGrey,
               display: 'flex',
               alignItems: 'center',
-              padding: `0 ${theme.style.padding}`,
+              padding: `0 ${style.padding}`,
             }}
           >
             <h6>{group.title}</h6>
           </div>
-          {group.items.map(item => (
-            <li style={{ margin: `0 ${theme.style.padding}` }}>{item}</li>
+          {group.items.map((item, index)=> (
+            <li
+              style={{
+                padding: '10px 0',
+                margin: `0 ${style.padding}`,
+                borderBottom: (index + 1 === group.items.length) ? 'none' : '1px solid rgba(171, 172, 173, 0.5)',
+              }}
+            >
+              {item}
+            </li>
           ))}
         </div>
       ))}
@@ -36,7 +47,7 @@ const List = props => (
       style={{
         width: '100%',
         height: 30,
-        backgroundColor: theme.color.lightGrey,
+        backgroundColor: color.lightGrey,
       }}
     />
     <div

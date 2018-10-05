@@ -3,6 +3,8 @@ import Icon from './Icon';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 
+const { color } = theme;
+
 class Search extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -62,8 +64,8 @@ Search.propTypes = {
 
 Search.defaultProps = {
   icon: true,
-  iconColor: theme.color.darkGrey,
-  cursorColor: theme.color.blue,
+  iconColor: color.darkGrey,
+  cursorColor: color.blue,
 };
 
 export default Search
