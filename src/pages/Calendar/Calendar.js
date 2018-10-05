@@ -21,20 +21,21 @@ class Calendar extends React.Component {
       ],
       items: [],
     };
-    this.filterList = this.filterList.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
-  filterList(event) {
+
+  componentWillMount () {
+    this.setState({items: this.state.initialItems})
+  }
+
+  onChange(event) {
     let updatedList = this.state.initialItems;
     updatedList = updatedList.filter(function(item){
       return item.toLowerCase().search(
         event.target.value.toLowerCase()) !== -1;
     });
     this.setState({items: updatedList});
-  }
-
-  componentWillMount (){
-    this.setState({items: this.state.initialItems})
   }
 
   render() {
@@ -44,8 +45,8 @@ class Calendar extends React.Component {
           title="Calendar"
           secondary
           search
+          onChange={this.onChange}
         />
-        <input type="text" placeholder="Search" onChange={this.filterList} />
         <ul>
           {
           this.state.items.map((item) => {

@@ -47,6 +47,7 @@ class Search extends React.Component {
           placeholder="Search"
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
+          onChange={this.props.onChange}
         />
         <div style={ icon }>
           <Icon />
