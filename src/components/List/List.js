@@ -35,8 +35,15 @@ const List = props => (
     <div
       style={{
         width: '100%',
-        height: 20,
+        height: 30,
         backgroundColor: theme.color.lightGrey,
+      }}
+    />
+    <div
+      style={{
+        width: '100%',
+        height: 200,
+        backgroundColor: '#f9f9f9',
       }}
     />
   </div>
