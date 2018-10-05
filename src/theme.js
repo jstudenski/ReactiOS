@@ -12,6 +12,10 @@ const theme = {
     grey: 'rgb(215, 216, 217)',
     lightGrey: 'rgb(239, 240, 241)',
   },
+  style: {
+    padding: '20px',
+    maxWidth: 375,
+  },
 };
 
 export default theme;

@@ -44,9 +44,11 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          {pages.map(page => (
-            <Route exact path={page.route} component={page.component} />
-          ))}
+          <div style={{maxWidth: 375, margin: '0 auto'}}>
+            {pages.map(page => (
+              <Route exact path={page.route} component={page.component} />
+            ))}
+          </div>
           <Footer pages={pages} />
         </div>
       </Router>

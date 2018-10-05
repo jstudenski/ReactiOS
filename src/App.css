@@ -3,6 +3,10 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", "Helvetica Neue", "Lucida Grande", "Arial", sans-serif;
   background-color: #f9f9f9;
@@ -48,17 +52,11 @@ h6 {
 
 p {
   font-size: 13px;
+  margin: 0;
 }
 
 .medium {
   font-weight: 500;
-}
-
-.container {
-  width: 375px;
-  box-sizing: border-box;
-  padding: 0 20px 69px 20px;
-  margin: 0 auto;
 }
 
 .footer-icons {
@@ -74,13 +72,6 @@ footer svg {
   height: 40px;
   width: 50px;
   display: inline-block;
-  box-sizing: border-box;
-}
-
-footer p {
-  font-size: 10px;
-  margin: 0;
-  text-align: center;
 }
 
 a:link {
@@ -94,9 +85,4 @@ a:link {
 
 div li:last-child {
   border-bottom: none;
-}
-
-.side-padding {
-  padding-left: 20px;
-  padding-right: 20px;
 }

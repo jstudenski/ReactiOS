@@ -21,7 +21,6 @@ class Search extends React.Component {
       borderRadius: 10,
       border: 'none',
       fontSize: 18,
-      boxSizing: 'border-box',
       paddingLeft: this.props.icon ? 32 : 12,
       height: 36,
       marginTop: 5,

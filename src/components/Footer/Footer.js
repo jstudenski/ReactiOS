@@ -17,7 +17,6 @@ class Footer extends React.Component {
       fontSize: 30,
       position: 'fixed',
       bottom: 0,
-      boxSizing: 'border-box',
       paddingBottom: 10,
     }
 
@@ -30,13 +29,13 @@ class Footer extends React.Component {
                 fontWeight: 'bold',
                 color: activeColor,
               }}
-              style={{ color: color }}
+              style={{ color: color, margin: '0px 10px' }}
               exact={index === 0}
               to={page.route}
             >
               <div>
                 {page.icon}
-                {labels && <p>{page.description}</p>}
+                {labels && <p style={{ fontSize: 10, textAlign: 'center', }}>{page.description}</p>}
               </div>
             </NavLink>
           ))}

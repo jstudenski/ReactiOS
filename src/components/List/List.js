@@ -21,12 +21,13 @@ const List = props => (
               backgroundColor: theme.color.lightGrey,
               display: 'flex',
               alignItems: 'center',
+              padding: `0 ${theme.style.padding}`,
             }}
           >
             <h6>{group.title}</h6>
           </div>
           {group.items.map(item => (
-            <li>{item}</li>
+            <li style={{ margin: `0 ${theme.style.padding}` }}>{item}</li>
           ))}
         </div>
       ))}

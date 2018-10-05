@@ -1,14 +1,12 @@
 .segmented {
     display:flex;
     flex-flow:row wrap;
-    box-sizing:border-box;
     font-size:90%;
     text-align:center;
 }
 .segmented label {
     /* display:block; */
     /* flex:1; */
-    /* box-sizing:border-box;
     border:1px solid #167efb;
     border-right:none;
     color:#167efb;
@@ -52,7 +50,6 @@ $lightColour: tint($mainColour, 90%); */
   display: flex;
 }
 .segment_control {
-  box-sizing: border-box;
   color: #007aff;
   cursor: pointer;
   font-size: 14px;
