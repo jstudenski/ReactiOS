@@ -10,7 +10,7 @@ const Footer = ({
   borderColor,
   pages,
   activeColor,
-  textColor,
+  linkColor,
   labels,
 }) => (
   <footer style={{
@@ -31,7 +31,7 @@ const Footer = ({
             color: activeColor,
           }}
           style={{
-            color: textColor,
+            color: linkColor,
             margin: '0px 10px',
           }}
           exact={index === 0}
@@ -52,7 +52,7 @@ Footer.propTypes = {
   activeColor: PropTypes.string,
   borderColor: PropTypes.string,
   backgroundColor: PropTypes.string,
-  textColor: PropTypes.string,
+  linkColor: PropTypes.string,
   labels: PropTypes.bool,
   pages: PropTypes.instanceOf(Array).isRequired,
 };
@@ -61,7 +61,7 @@ Footer.defaultProps = {
   activeColor: color.blue,
   borderColor: color.grey,
   backgroundColor: color.lightGrey,
-  textColor: color.darkGrey,
+  linkColor: color.darkGrey,
   labels: true,
 };
 
