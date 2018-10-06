@@ -49,8 +49,11 @@ class Calendar extends React.Component {
         userInput.toLowerCase()) !== -1;
       });
 
+      // TODO: if list is zero, display "no results screen"
+      console.log(updatedList.length);
+      
       this.setState({
-        items: [{ items: updatedList}]
+        items: [{ title: "Results:", items: updatedList}]
       });
     }
   }

@@ -16,7 +16,7 @@ import Calendar from './pages/Calendar/Calendar';
 // Compenents
 import Footer from './components/Footer';
 
-const pages = [
+const PAGES = [
   {
     route: '/', description: 'Home', component: Home, icon: <HomeIcon />,
   },
@@ -45,11 +45,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <div style={{maxWidth: 375, margin: '0 auto'}}>
-            {pages.map(page => (
+            {PAGES.map(page => (
               <Route exact key={page.route} path={page.route} component={page.component} />
             ))}
           </div>
-          <Footer pages={pages} />
+          <Footer pages={PAGES} />
         </div>
       </Router>
     );

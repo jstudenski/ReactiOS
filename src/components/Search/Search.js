@@ -50,7 +50,6 @@ class Search extends React.Component {
       position: 'absolute',
       right: 9,
       color: this.props.iconColor,
-      display: this.props.icon ? 'inline' : 'none',
     }
 
     return (
