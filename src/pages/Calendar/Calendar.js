@@ -25,24 +25,34 @@ class Calendar extends React.Component {
   }
 
   onChange(event) {
-    let list = this.state.initialItems;
-    let tempArr = [];
-    Object.keys(list).forEach(function(key){
-      list[key].items.forEach(function(item){
-        tempArr.push(item);
-      });
-    })
-    let updatedList = tempArr;
+    let userInput;
+    if (typeof(event) === 'object') {
+      userInput = event.target.value;
+    } else {
+      userInput = event;
+    };
 
-    updatedList = updatedList.filter(function(item){
-      return item.toLowerCase().search(
-      event.target.value.toLowerCase()) !== -1;
-    });
-    console.log({items: updatedList})
-    console.log(this.state.initialItems);
-    this.setState({
-      items: [{ items: updatedList}]
-    });
+    if (userInput == '') {
+      this.setState({items: this.state.initialItems})
+    } else {
+      let list = this.state.initialItems;
+      let tempArr = [];
+      Object.keys(list).forEach(function(key){
+        list[key].items.forEach(function(item){
+          tempArr.push(item);
+        });
+      })
+      let updatedList = tempArr;
+
+      updatedList = updatedList.filter(function(item){
+        return item.toLowerCase().search(
+        userInput.toLowerCase()) !== -1;
+      });
+
+      this.setState({
+        items: [{ items: updatedList}]
+      });
+    }
   }
 
   render() {

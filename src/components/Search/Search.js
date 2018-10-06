@@ -1,14 +1,19 @@
 import React from 'react';
 import Icon from './Icon';
+import Xicon from './Xicon';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 
 const { color } = theme;
 
 class Search extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+    this.onClick = this.onClick.bind(this);
+  }
+  onClick() {
+    this.props.onChange('');
+  }
 
   render() {
     const searchBar = {
@@ -38,6 +43,16 @@ class Search extends React.Component {
       display: this.props.icon ? 'inline' : 'none',
     }
 
+    const xicon = {
+      width: 20,
+      height: 20,
+      paddingTop: 5,
+      position: 'absolute',
+      right: 9,
+      color: this.props.iconColor,
+      display: this.props.icon ? 'inline' : 'none',
+    }
+
     return (
       <form style={ searchBar }>
         <input
@@ -52,6 +67,10 @@ class Search extends React.Component {
         <div style={ icon }>
           <Icon />
         </div>
+        <div style={ xicon } onClick={this.onClick}>
+          <Xicon />
+        </div>
+
       </form>
     )
   }
