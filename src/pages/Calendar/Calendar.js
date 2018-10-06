@@ -25,8 +25,8 @@ class Calendar extends React.Component {
   }
 
 
-  componentWillMount () {
-    this.setState({items: this.state.initialItems})
+  componentWillMount() {
+    this.setState({ items: this.state.initialItems })
   }
 
   onChange(event) {
