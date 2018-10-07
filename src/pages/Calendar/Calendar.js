@@ -3,16 +3,14 @@ import React from 'react';
 import Header from '../../components/Header';
 import List from '../../components/List';
 
-
 class Calendar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       initialItems: [
-        { title: "Fruit", items: ["A", "B", "C", "D", "E"]},
-        { title: "Vegtables", items: ["A1", "B2", "C3", "D4", "E5"]},
-        { items: ["%A", "X",]},
-        { items: ["@", "#", "^", "@E", "!"]},
+        { title: 'Animals', items: ['wombat', 'octopus', 'puma', 'salamander', 'otter', 'crow', 'cougar', 'baboon', 'ocelot', 'elk', 'jackal', 'woodchuck']},
+        { title: 'Movies', items: ['Mission: Impossible - Fallout', 'Wonder Woman', 'Edge of Tomorrow', 'Pulp Fiction', 'Shrek', 'Iron Man', 'Solo: A Star Wars Story', 'The Matrix']},
+        { items: ['Boise', 'Denver', 'Minneapolis', 'Anchorage', 'New Orleans', 'Chandler', 'Hialeah', 'Madison', 'Tulsa', 'Lubbock']},
       ],
       items: [],
     };
@@ -51,9 +49,9 @@ class Calendar extends React.Component {
 
       // TODO: if list is zero, display "no results screen"
       console.log(updatedList.length);
-      
+
       this.setState({
-        items: [{ title: "Results:", items: updatedList}]
+        items: [{ title: 'Results:', items: updatedList}]
       });
     }
   }
