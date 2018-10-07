@@ -17,41 +17,36 @@ class Calendar extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
 
-
   componentWillMount() {
     this.setState({items: this.state.initialItems})
   }
 
   onChange(event) {
-    let userInput;
-    if (typeof(event) === 'object') {
-      userInput = event.target.value;
-    } else {
-      userInput = event;
-    };
+    const userInput = (typeof (event) === 'object') ? event.target.value : event;
+    const { initialItems } = this.state;
 
-    if (userInput == '') {
-      this.setState({items: this.state.initialItems})
+    if (userInput === '') {
+      this.setState({ items: initialItems });
     } else {
-      let list = this.state.initialItems;
-      let tempArr = [];
-      Object.keys(list).forEach(function(key){
-        list[key].items.forEach(function(item){
-          tempArr.push(item);
+      let list = initialItems;
+      let updatedList = [];
+      Object.keys(list).forEach((key) => {
+        list[key].items.forEach((item) => {
+          updatedList.push(item);
         });
-      })
-      let updatedList = tempArr;
+      });
 
-      updatedList = updatedList.filter(function(item){
+      updatedList = updatedList.filter((item) => {
         return item.toLowerCase().search(
-        userInput.toLowerCase()) !== -1;
+          userInput.toLowerCase(),
+        ) !== -1;
       });
 
       // TODO: if list is zero, display "no results screen"
-      console.log(updatedList.length);
+      // console.log(updatedList.length);
 
       this.setState({
-        items: [{ title: 'Results:', items: updatedList}]
+        items: [{ title: 'Results:', items: updatedList }],
       });
     }
   }
