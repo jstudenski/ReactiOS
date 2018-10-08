@@ -28,7 +28,7 @@ class Calendar extends React.Component {
     if (userInput === '') {
       this.setState({ items: initialItems });
     } else {
-      let list = initialItems;
+      const list = initialItems;
       let updatedList = [];
       Object.keys(list).forEach((key) => {
         list[key].items.forEach((item) => {

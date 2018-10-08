@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomeIcon from './components/icons/Home';
 import EllipsisIcon from './components/icons/Ellipsis';
 import CalendarIcon from './components/icons/Calendar';
+
 import CommentIcon from './components/icons/Comment';
 import EnvelopeIcon from './components/icons/Envelope';
 // Pages
@@ -44,7 +45,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div style={{maxWidth: 375, margin: '0 auto'}}>
+          <div style={{ maxWidth: 375, margin: '0 auto' }}>
             {PAGES.map(page => (
               <Route exact key={page.route} path={page.route} component={page.component} />
             ))}
