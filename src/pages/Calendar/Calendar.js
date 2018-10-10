@@ -37,9 +37,7 @@ class Calendar extends React.Component {
       });
 
       updatedList = updatedList.filter((item) => {
-        return item.toLowerCase().search(
-          userInput.toLowerCase(),
-        ) !== -1;
+        return item.toLowerCase().search(userInput.toLowerCase()) !== -1;
       });
 
       // TODO: if list is zero, display "no results screen"
@@ -52,6 +50,7 @@ class Calendar extends React.Component {
   }
 
   render() {
+    const { items } = this.state;
     return (
       <div>
         <Header
@@ -60,7 +59,7 @@ class Calendar extends React.Component {
           search
           onChange={this.onChange}
         />
-        <List items={this.state.items} />
+        <List items={items} />
       </div>
     );
   }
