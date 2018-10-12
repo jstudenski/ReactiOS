@@ -11,7 +11,6 @@ const STYLE = {
   overflow: 'hidden',
 };
 
-
 const Card = props => (
   <div style={STYLE}>H world</div>
 );
