@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Icon from './Icon';
 import Xicon from './Xicon';
-import PropTypes from 'prop-types';
 import theme from '../../theme';
 
 const { color } = theme;
