@@ -11,9 +11,7 @@ const STYLE = {
   overflow: 'hidden',
 };
 
-const Card = props => (
-  <div style={STYLE}>H world</div>
-);
+const Card = () => (<div style={STYLE}>H world</div>);
 
 Card.propTypes = {
   // activeColor: PropTypes.string,
