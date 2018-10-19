@@ -25,7 +25,6 @@ class Header extends React.Component {
   }
 
 
-
   render() {
     const {
       title, search, secondary, color, hr,
@@ -45,7 +44,16 @@ class Header extends React.Component {
       <header style={style}>
         <div style={{ maxWidth: 375, margin: '0 auto' }}>
           <h2>{title}</h2>
-          { search && <Search onChange={this.props.onChange} onFocus={this.onFocus} onBlur={this.onBlur} /> }
+          {
+            search
+            && (
+            <Search
+              onChange={this.props.onChange}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
+            />
+            )
+          }
         </div>
       </header>
     );
