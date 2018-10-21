@@ -9,11 +9,11 @@ import CalendarIcon from './components/icons/Calendar';
 import CommentIcon from './components/icons/Comment';
 import EnvelopeIcon from './components/icons/Envelope';
 // Pages
-import Home from './pages/Home/Home';
-import Ellipsis from './pages/Ellipsis/Ellipsis';
-import CommentPage from './pages/Comment/Comment';
-import Envelope from './pages/Envelope/Envelope';
-import Calendar from './pages/Calendar/Calendar';
+import Home from './pages/Home';
+import Ellipsis from './pages/Ellipsis';
+import CommentPage from './pages/Comment';
+import Envelope from './pages/Envelope';
+import Calendar from './pages/Calendar';
 // Compenents
 import Footer from './components/Footer';
 

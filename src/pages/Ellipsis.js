@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header';
-import theme from '../../theme';
-import Card from '../../components/Card';
+import Header from '../components/Header';
+import theme from '../theme';
+import Card from '../components/Card';
 
 const { style } = theme;
 

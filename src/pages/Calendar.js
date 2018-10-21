@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import Header from '../../components/Header';
-import List from '../../components/List';
+import Header from '../components/Header';
+import List from '../components/List';
 
 class Calendar extends React.Component {
   constructor(props) {

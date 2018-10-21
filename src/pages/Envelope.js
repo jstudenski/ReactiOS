@@ -1,6 +1,6 @@
 import React from 'react';
-import SegmentControl from '../../components/SegmentControl';
-import Header from '../../components/Header';
+import SegmentControl from '../components/SegmentControl';
+import Header from '../components/Header';
 
 const Envelope = () => (
   <div>

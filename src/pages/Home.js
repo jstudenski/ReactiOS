@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Context from '../../context';
-import theme from '../../theme';
+import Header from '../components/Header';
+import Context from '../context';
+import theme from '../theme';
 
 const { style, color } = theme;
 
