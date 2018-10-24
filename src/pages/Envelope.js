@@ -8,7 +8,7 @@ const Envelope = () => (
     <Header title="Envelope" secondary={false} />
     <div>
       <SegmentControl color="rebeccapurple" values={['One', 'Two']} selectedIndex={1} />
-      <Segments tabs={['None', 'Manual', 'Auto']} color={'#007AFF'} />
+      <Segments tabs={['None', 'Manual', 'Auto']} color="#007AFF" />
     </div>
   </div>
 );
