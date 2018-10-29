@@ -43,6 +43,7 @@ class Segmentcontrol extends React.Component {
   }
 }
 
+
 Segmentcontrol.propTypes = {
   // title: PropTypes.string.isRequired,
 };
