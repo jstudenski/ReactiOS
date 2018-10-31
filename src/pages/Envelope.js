@@ -1,5 +1,5 @@
 import React from 'react';
-import SegmentControl from '../components/SegmentControl';
+// import SegmentControl from '../components/SegmentControl';
 import Header from '../components/Header';
 import Segments from '../components/Segments';
 
