@@ -17,7 +17,7 @@ class Calendar extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({items: this.state.initialItems})
   }
 
