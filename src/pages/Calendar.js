@@ -51,17 +51,15 @@ class Calendar extends React.Component {
 
   render() {
     const { items } = this.state;
-    return (
-      <div>
-        <Header
-          title="Calendar"
-          secondary
-          search
-          onChange={this.onChange}
-        />
-        <List items={items} />
-      </div>
-    );
+    return ([
+      <Header
+        title="Calendar"
+        secondary
+        search
+        onChange={this.onChange}
+      />,
+      <List items={items} />
+    ]);
   }
 }
 
