@@ -37,7 +37,9 @@ class Calendar extends React.Component {
         });
       });
 
-      updatedList = updatedList.filter((item) => item.toLowerCase().search(userInput.toLowerCase()) !== -1);
+      updatedList = updatedList.filter(
+        item => item.toLowerCase().search(userInput.toLowerCase()) !== -1,
+      );
 
       // TODO: if list is zero, display "no results screen"
       // console.log(updatedList.length);
