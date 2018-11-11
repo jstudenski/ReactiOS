@@ -9,9 +9,9 @@ class Calendar extends React.Component {
     super(props);
     this.state = {
       initialItems: [
-        { title: 'Animals', items: ['wombat', 'octopus', 'puma', 'salamander', 'otter', 'crow', 'cougar', 'baboon', 'ocelot', 'elk', 'jackal', 'woodchuck']},
-        { title: 'Movies', items: ['Mission: Impossible - Fallout', 'Wonder Woman', 'Edge of Tomorrow', 'Pulp Fiction', 'Shrek', 'Iron Man', 'Solo: A Star Wars Story', 'The Matrix']},
-        { items: ['Boise', 'Denver', 'Minneapolis', 'Anchorage', 'New Orleans', 'Chandler', 'Hialeah', 'Madison', 'Tulsa', 'Lubbock']},
+        { title: 'Animals', items: ['wombat', 'octopus', 'puma', 'salamander', 'otter', 'crow', 'cougar', 'baboon', 'ocelot', 'elk', 'jackal', 'woodchuck'] },
+        { title: 'Movies', items: ['Mission: Impossible - Fallout', 'Wonder Woman', 'Edge of Tomorrow', 'Pulp Fiction', 'Shrek', 'Iron Man', 'Solo: A Star Wars Story', 'The Matrix'] },
+        { items: ['Boise', 'Denver', 'Minneapolis', 'Anchorage', 'New Orleans', 'Chandler', 'Hialeah', 'Madison', 'Tulsa', 'Lubbock'] },
       ],
       items: [],
     };
@@ -19,7 +19,7 @@ class Calendar extends React.Component {
   }
 
   UNSAFE_componentWillMount() {
-    this.setState({items: this.state.initialItems})
+    this.setState({ items: this.state.initialItems });
   }
 
   onChange(event) {
@@ -37,9 +37,7 @@ class Calendar extends React.Component {
         });
       });
 
-      updatedList = updatedList.filter((item) => {
-        return item.toLowerCase().search(userInput.toLowerCase()) !== -1;
-      });
+      updatedList = updatedList.filter((item) => item.toLowerCase().search(userInput.toLowerCase()) !== -1);
 
       // TODO: if list is zero, display "no results screen"
       // console.log(updatedList.length);
@@ -59,7 +57,7 @@ class Calendar extends React.Component {
         search
         onChange={this.onChange}
       />,
-      <List items={items} />
+      <List items={items} />,
     ]);
   }
 }
