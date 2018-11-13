@@ -16,6 +16,9 @@ class Search extends React.Component {
   }
 
   render() {
+
+    const { cursorColor, icon, iconColor } = this.props;
+
     const searchBar = {
       display: 'flex',
       alignItems: 'center',
@@ -23,24 +26,24 @@ class Search extends React.Component {
     }
 
     const searchInput = {
-      caretColor: this.props.cursorColor,
+      caretColor: cursorColor,
       width: '100%',
       borderRadius: 10,
       border: 'none',
       fontSize: 18,
-      paddingLeft: this.props.icon ? 32 : 12,
+      paddingLeft: icon ? 32 : 12,
       height: 36,
       marginTop: 5,
     }
 
-    const icon = {
+    const ICON = {
       width: 16,
       height: 16,
       paddingTop: 5,
       position: 'absolute',
       left: 9,
-      color: this.props.iconColor,
-      display: this.props.icon ? 'inline' : 'none',
+      color: iconColor,
+      display: icon ? 'inline' : 'none',
     }
 
     const xicon = {
@@ -63,7 +66,7 @@ class Search extends React.Component {
           onBlur={this.props.onBlur}
           onChange={this.props.onChange}
         />
-        <div style={ icon }>
+        <div style={ ICON }>
           <Icon />
         </div>
         <div style={ xicon } onClick={this.onClick}>
