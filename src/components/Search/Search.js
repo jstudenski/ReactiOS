@@ -72,7 +72,6 @@ class Search extends React.Component {
         <div style={ xicon } onClick={this.onClick}>
           <Xicon />
         </div>
-
       </form>
     )
   }
