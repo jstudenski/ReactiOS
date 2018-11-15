@@ -52,7 +52,7 @@ class Search extends React.Component {
       paddingTop: 5,
       position: 'absolute',
       right: 9,
-      color: this.props.iconColor,
+      color: iconColor,
     }
 
     return (
