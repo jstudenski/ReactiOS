@@ -23,7 +23,7 @@ class Search extends React.Component {
       display: 'flex',
       alignItems: 'center',
       position: 'relative',
-    }
+    };
 
     const searchInput = {
       caretColor: cursorColor,
@@ -34,7 +34,7 @@ class Search extends React.Component {
       paddingLeft: icon ? 32 : 12,
       height: 36,
       marginTop: 5,
-    }
+    };
 
     const ICON = {
       width: 16,
@@ -44,7 +44,7 @@ class Search extends React.Component {
       left: 9,
       color: iconColor,
       display: icon ? 'inline' : 'none',
-    }
+    };
 
     const xicon = {
       width: 20,
@@ -53,7 +53,7 @@ class Search extends React.Component {
       position: 'absolute',
       right: 9,
       color: iconColor,
-    }
+    };
 
     return (
       <form style={ searchBar }>
