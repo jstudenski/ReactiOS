@@ -17,7 +17,7 @@ class Search extends React.Component {
 
   render() {
 
-    const { cursorColor, icon, iconColor } = this.props;
+    const { cursorColor, icon, iconColor, onFocus, onBlur, onChange } = this.props;
 
     const searchBar = {
       display: 'flex',
@@ -62,9 +62,9 @@ class Search extends React.Component {
           type="text"
           name="searchbar"
           placeholder="Search"
-          onFocus={this.props.onFocus}
-          onBlur={this.props.onBlur}
-          onChange={this.props.onChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          onChange={onChange}
         />
         <div style={ ICON }>
           <Icon />
