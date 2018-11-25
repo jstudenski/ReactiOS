@@ -24,7 +24,6 @@ class Header extends React.Component {
     });
   }
 
-
   render() {
     const {
       title, search, secondary, color, hr,
