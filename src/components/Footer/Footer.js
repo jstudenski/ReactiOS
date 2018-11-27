@@ -40,7 +40,11 @@ const Footer = ({
         >
           <div>
             {page.icon}
-            {labels && <p style={{ fontSize: 10, textAlign: 'center' }}>{page.description}</p>}
+            {labels &&
+              <p style={{ fontSize: 10, textAlign: 'center' }}>
+                {page.description}
+              </p>
+            }
           </div>
         </NavLink>
       ))}
