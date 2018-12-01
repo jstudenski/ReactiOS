@@ -49,6 +49,7 @@ const Footer = ({
             }
           </div>
         </NavLink>
+        
       ))}
     </div>
   </footer>
