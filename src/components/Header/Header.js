@@ -48,8 +48,8 @@ class Header extends React.Component {
             && (
             <Search
               // onChange={onChange}
-              onFocus={onFocus}
-              onBlur={onBlur}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
             />
             )
           }
