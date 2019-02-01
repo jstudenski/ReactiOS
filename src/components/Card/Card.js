@@ -6,8 +6,8 @@ import React from 'react';
 
 const STYLE = {
   backgroundColor: 'salmon',
-  minHeight: 100,
   borderRadius: 12,
+  minHeight: 100,
   overflow: 'hidden',
 };
 
