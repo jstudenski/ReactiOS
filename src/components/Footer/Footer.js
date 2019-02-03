@@ -6,21 +6,21 @@ import theme from '../../theme';
 const { color } = theme;
 
 const Footer = ({
+  activeColor,
   backgroundColor,
   borderColor,
-  pages,
-  activeColor,
-  linkColor,
   labels,
+  linkColor,
+  pages,
 }) => (
   <footer style={{
-    borderTop: `1px solid ${borderColor}`,
     backgroundColor,
-    width: '100%',
-    fontSize: 30,
-    position: 'fixed',
+    borderTop: `1px solid ${borderColor}`,
     bottom: 0,
+    fontSize: 30,
     paddingBottom: 10,
+    position: 'fixed',
+    width: '100%',
   }}
   >
     <div className="footer-icons">
