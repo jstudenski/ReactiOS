@@ -49,3 +49,4 @@ A react component library designed for mobile inspired by iOS.
 | icon | boolean | `true` | display search bar icon |
 | iconColor | string | `theme.color.darkGrey` | magnifying glass icon color |
 | cursorColor | string | `theme.color.blue` | sets the color of the text insertion caret |
+
