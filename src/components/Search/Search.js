@@ -18,8 +18,13 @@ class Search extends React.Component {
 
   render() {
     const {
- cursorColor, icon, iconColor, onFocus, onBlur, onChange 
-} = this.props;
+      cursorColor,
+      icon
+      iconColor,
+      onFocus,
+      onBlur,
+      onChange,
+    } = this.props;
 
     const searchBar = {
       display: 'flex',
