@@ -11,13 +11,15 @@ class Search extends React.Component {
     super(props);
     this.onClick = this.onClick.bind(this);
   }
+
   onClick() {
     this.props.onChange('');
   }
 
   render() {
-
-    const { cursorColor, icon, iconColor, onFocus, onBlur, onChange } = this.props;
+    const {
+ cursorColor, icon, iconColor, onFocus, onBlur, onChange 
+} = this.props;
 
     const searchBar = {
       display: 'flex',
@@ -26,14 +28,14 @@ class Search extends React.Component {
     };
 
     const searchInput = {
-      caretColor: cursorColor,
-      width: '100%',
-      borderRadius: 10,
       border: 'none',
+      borderRadius: 10,
+      caretColor: cursorColor,
       fontSize: 18,
-      paddingLeft: icon ? 32 : 12,
       height: 36,
       marginTop: 5,
+      paddingLeft: icon ? 32 : 12,
+      width: '100%',
     };
 
     const ICON = {
@@ -56,9 +58,9 @@ class Search extends React.Component {
     };
 
     return (
-      <form style={ searchBar }>
+      <form style={searchBar}>
         <input
-          style={ searchInput }
+          style={searchInput}
           type="text"
           name="searchbar"
           placeholder="Search"
@@ -66,14 +68,14 @@ class Search extends React.Component {
           onBlur={onBlur}
           onChange={onChange}
         />
-        <div style={ ICON }>
+        <div style={ICON}>
           <Icon />
         </div>
-        <div style={ xicon } onClick={this.onClick}>
+        <div style={xicon} onClick={this.onClick}>
           <Xicon />
         </div>
       </form>
-    )
+    );
   }
 }
 
@@ -89,4 +91,4 @@ Search.defaultProps = {
   cursorColor: color.blue,
 };
 
-export default Search
+export default Search;
