@@ -35,8 +35,8 @@ const Footer = ({
             margin: '0px 10px',
           }}
           exact={index === 0}
-          to={page.route}
           key={page.description}
+          to={page.route}
         >
           <div>
             {page.icon}
