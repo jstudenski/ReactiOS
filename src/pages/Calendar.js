@@ -54,10 +54,10 @@ class Calendar extends React.Component {
     const { items } = this.state;
     return ([
       <Header
-        title="Calendar"
-        secondary
-        search
         onChange={this.onChange}
+        search
+        secondary
+        title="Calendar"
       />,
       <List items={items} />,
     ]);
