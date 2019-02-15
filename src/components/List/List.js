@@ -19,12 +19,12 @@ const List = ({ items }) => (
           <div
             key={indexA}
             style={{
-              width: '100%',
-              height: 30,
+              alignItems: 'center',
               backgroundColor: color.lightGrey,
               display: 'flex',
-              alignItems: 'center',
+              height: 30,
               padding: `0 ${style.padding}`,
+              width: '100%',
             }}
           >
             <h6>{group.title}</h6>
@@ -32,9 +32,9 @@ const List = ({ items }) => (
           {group.items.map((item, indexB) => (
             <li
               style={{
-                padding: '10px 0',
-                margin: `0 ${style.padding}`,
                 borderBottom: (indexB + 1 === group.items.length) ? 'none' : '1px solid rgba(171, 172, 173, 0.5)',
+                margin: `0 ${style.padding}`,
+                padding: '10px 0',
               }}
               key={item}
             >
@@ -44,20 +44,16 @@ const List = ({ items }) => (
         </div>
       ))}
     </ul>
-    <div
-      style={{
-        width: '100%',
-        height: 30,
-        backgroundColor: color.lightGrey,
-      }}
-    />
-    <div
-      style={{
-        width: '100%',
-        height: 200,
-        backgroundColor: '#f9f9f9',
-      }}
-    />
+    <div style={{
+      backgroundColor: color.lightGrey,
+      height: 30,
+      width: '100%',
+    }} />
+    <div style={{
+      backgroundColor: '#f9f9f9',
+      height: 200,
+      width: '100%',
+    }} />
   </div>
 );
 

@@ -19,16 +19,16 @@ class Search extends React.Component {
   render() {
     const {
       cursorColor,
-      icon
+      icon,
       iconColor,
-      onFocus,
       onBlur,
       onChange,
+      onFocus,
     } = this.props;
 
     const searchBar = {
-      display: 'flex',
       alignItems: 'center',
+      display: 'flex',
       position: 'relative',
     };
 
@@ -44,39 +44,40 @@ class Search extends React.Component {
     };
 
     const ICON = {
-      width: 16,
-      height: 16,
-      paddingTop: 5,
-      position: 'absolute',
-      left: 9,
       color: iconColor,
       display: icon ? 'inline' : 'none',
+      height: 16,
+      left: 9,
+      paddingTop: 5,
+      position: 'absolute',
+      width: 16,
     };
 
     const xicon = {
-      width: 20,
+      color: iconColor,
       height: 20,
       paddingTop: 5,
       position: 'absolute',
       right: 9,
-      color: iconColor,
+      width: 20,
     };
 
     return (
       <form style={searchBar}>
         <input
-          style={searchInput}
-          type="text"
           name="searchbar"
-          placeholder="Search"
-          onFocus={onFocus}
           onBlur={onBlur}
           onChange={onChange}
-        />
+          onFocus={onFocus}
+          placeholder="Search"
+          style={searchInput}
+          type="text" />
         <div style={ICON}>
           <Icon />
         </div>
-        <div style={xicon} onClick={this.onClick}>
+        <div
+          style={xicon}
+          onClick={this.onClick}>
           <Xicon />
         </div>
       </form>

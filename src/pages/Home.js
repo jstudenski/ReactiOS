@@ -11,28 +11,25 @@ const Home = () => (
     <Context.Provider>
       <div
         style={{
-          padding: `0 ${style.padding}`,
-          justifyContent: 'space-between',
           display: 'flex',
           flexWrap: 'wrap',
-        }}
-      >
+          justifyContent: 'space-between',
+          padding: `0 ${style.padding}`,
+        }}>
         {Object.keys(color).map(value => (
           <div
             key={value}
             style={{
               backgroundColor: color[value],
-              // margin: '1.6%',
-              width: '30%',
-              float: 'left',
-              height: 75,
               borderRadius: 10,
-              padding: '0.8em',
-              textAlign: 'center',
               color: '#fff',
               flex: 1,
-            }}
-          >
+              float: 'left',
+              height: 75,
+              padding: '0.8em',
+              textAlign: 'center',
+              width: '30%',
+            }}>
             {value}
           </div>
         ))}
