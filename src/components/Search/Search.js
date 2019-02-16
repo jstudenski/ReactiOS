@@ -76,6 +76,7 @@ class Search extends React.Component {
           <Icon />
         </div>
         <div
+          role="button"
           style={xicon}
           onClick={this.onClick}>
           <Xicon />
