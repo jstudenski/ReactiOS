@@ -18,9 +18,9 @@ class Calendar extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
 
-  UNSAFE_componentWillMount() {
-    this.setState({ items: this.state.initialItems });
-  }
+  // UNSAFE_componentWillMount() {
+  //   this.setState({ items: this.state.initialItems });
+  // }
 
   onChange(event) {
     const userInput = (typeof (event) === 'object') ? event.target.value : event;
