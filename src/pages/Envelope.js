@@ -6,7 +6,10 @@ const Envelope = () => (
   <div>
     <Header title="Envelope" secondary={false} />
     <div>
-      <Segments tabs={['Salmon', 'DarkSlateGray', 'Aquamarine']} color="#007AFF" />
+      <Segments
+        tabs={['Salmon', 'DarkSlateGray', 'Aquamarine']}
+        color="#007AFF"
+      />
     </div>
   </div>
 );
