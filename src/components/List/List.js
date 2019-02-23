@@ -17,7 +17,7 @@ const List = ({ items }) => (
       {items.map((group, indexA) => (
         <div>
           <div
-            key={indexA}
+            // key={indexA}
             style={{
               alignItems: 'center',
               backgroundColor: color.lightGrey,
