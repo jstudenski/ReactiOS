@@ -27,8 +27,8 @@ const Footer = ({
       {pages.map((page, index) => (
         <NavLink
           activeStyle={{
-            fontWeight: 'bold',
             color: activeColor,
+            fontWeight: 'bold',
           }}
           style={{
             color: linkColor,
