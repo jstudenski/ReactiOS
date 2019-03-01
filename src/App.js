@@ -9,11 +9,11 @@ import CalendarIcon from './components/icons/Calendar';
 import CommentIcon from './components/icons/Comment';
 import EnvelopeIcon from './components/icons/Envelope';
 // Pages
-import Home from './pages/Home';
-import Ellipsis from './pages/Ellipsis';
-import CommentPage from './pages/Comment';
-import Envelope from './pages/Envelope';
 import Calendar from './pages/Calendar';
+import CommentPage from './pages/Comment';
+import Ellipsis from './pages/Ellipsis';
+import Envelope from './pages/Envelope';
+import Home from './pages/Home';
 // Compenents
 import Footer from './components/Footer';
 
@@ -62,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default App;
