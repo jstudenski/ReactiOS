@@ -30,12 +30,12 @@ const Footer = ({
             color: activeColor,
             fontWeight: 'bold',
           }}
+          exact={index === 0}
+          key={page.description}
           style={{
             color: linkColor,
             margin: '0px 10px',
           }}
-          exact={index === 0}
-          key={page.description}
           to={page.route}
         >
           <div>
@@ -65,10 +65,10 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
   activeColor: color.blue,
-  borderColor: color.grey,
   backgroundColor: color.lightGrey,
-  linkColor: color.darkGrey,
+  borderColor: color.grey,
   labels: true,
+  linkColor: color.darkGrey,
 };
 
 export default Footer;
