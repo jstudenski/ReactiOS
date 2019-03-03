@@ -21,4 +21,5 @@ Card.defaultProps = {
   // activeColor: color.blue,
 };
 
+
 export default Card;
