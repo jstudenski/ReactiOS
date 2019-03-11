@@ -24,3 +24,4 @@ Card.defaultProps = {
 };
 
 export default Card;
+
