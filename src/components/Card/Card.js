@@ -1,8 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import theme from '../../theme';
 
-// const { color } = theme;
 
 const STYLE = {
   backgroundColor: 'salmon',
@@ -10,8 +7,6 @@ const STYLE = {
   minHeight: 100,
   overflow: 'hidden',
 };
-
-
 
 const Card = () => (<div style={STYLE}>H world</div>);
 
@@ -24,4 +19,3 @@ Card.defaultProps = {
 };
 
 export default Card;
-
